@@ -1,0 +1,2905 @@
+{
+  "id": "fet_libre_extras_V01",
+  "grupos": [
+    "Geo-S4",
+    "ICCI-S2",
+    "ICCI-S3",
+    "ICCI-S4",
+    "ICCI-S5",
+    "ICCI-S6",
+    "ICCI-S7",
+    "ICCI-S8",
+    "ICCI-S9",
+    "ICCI-S10",
+    "ICEL-S3",
+    "ICEL-S4",
+    "ICEL-S5",
+    "ICEL-S6",
+    "IenCI-S2",
+    "IenCI-S3",
+    "IenCI-S4",
+    "IenCI-S5",
+    "IenCI-S6",
+    "IenCI-S7",
+    "IenCI-S8",
+    "PC-S3"
+  ],
+  "salas": [
+    "R-006",
+    "R-012",
+    "R-019",
+    "R-020",
+    "R-023",
+    "R-031",
+    "R-032",
+    "R-033",
+    "R-043",
+    "R-049",
+    "U8",
+    "V2-Rob",
+    "V2-Univ",
+    "V3-Rob",
+    "Y1-001",
+    "Y1-003",
+    "Y1-004",
+    "Y1-005",
+    "Y1-104",
+    "Y2-105",
+    "Y2-107"
+  ],
+  "docentes": [
+    "Docente 02",
+    "Docente 03",
+    "Docente 05",
+    "Docente 06",
+    "Docente 07",
+    "Docente 08",
+    "Docente 09",
+    "Docente 10",
+    "Docente 11",
+    "Docente 13",
+    "Docente 14",
+    "Docente 16",
+    "Docente 18",
+    "Docente 19",
+    "Docente 24",
+    "Docente 25",
+    "Docente 27",
+    "Docente 28",
+    "Docente 31",
+    "Docente 32",
+    "Docente 34",
+    "Docente 37",
+    "Docente 38",
+    "Docente 40",
+    "Docente 42",
+    "Docente 43",
+    "Docente 44",
+    "Docente 46",
+    "Docente 47",
+    "Docente 48",
+    "Docente 49",
+    "Docente 51",
+    "Docente 53",
+    "Docente 54",
+    "Docente 56",
+    "Docente 57",
+    "Docente 58",
+    "Docente 60",
+    "Docente 62",
+    "Docente 64",
+    "Docente 66",
+    "Docente 67"
+  ],
+  "sesiones": [
+    {
+      "asignatura": "Diseño y Análisis de Algoritmo",
+      "nrc": "22799",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S7"
+      ],
+      "docentes": [
+        "Docente 66"
+      ],
+      "dia": 0,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "Y1-004",
+      "cupo": 21,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Pr. intro a la Ing. Electrónica",
+      "nrc": "22805",
+      "tipo": "Taller",
+      "grupos": [
+        "ICEL-S4"
+      ],
+      "docentes": [
+        "Docente 51"
+      ],
+      "dia": 0,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "U8",
+      "cupo": 15,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Proyecto Programación Avanzada",
+      "nrc": "21959",
+      "tipo": "Proyecto",
+      "grupos": [
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 28"
+      ],
+      "dia": 0,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "R-019",
+      "cupo": 21,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Aprendizaje Profundo para Visión por Computador",
+      "nrc": "60277 / 60287",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 51"
+      ],
+      "dia": 0,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-033",
+      "cupo": 0,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Desarrollo de Soluciones Móviles",
+      "nrc": "20640",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S6"
+      ],
+      "docentes": [
+        "Docente 31"
+      ],
+      "dia": 0,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-012",
+      "cupo": 21,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Ingeniería de Requerimientos",
+      "nrc": "22827 / 22828",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 18"
+      ],
+      "dia": 0,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "V2-Univ",
+      "cupo": 32,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas Operativos",
+      "nrc": "20573 / 20716",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S7",
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 25"
+      ],
+      "dia": 0,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-006",
+      "cupo": 45,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Circuítos Análogos",
+      "nrc": "23820",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S5"
+      ],
+      "docentes": [
+        "Docente 51"
+      ],
+      "dia": 0,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "R-043",
+      "cupo": 20,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Estructura de Datos",
+      "nrc": "20537",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 16"
+      ],
+      "dia": 0,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "R-019",
+      "cupo": 45,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Proyecto Integrador Software",
+      "nrc": "21949",
+      "tipo": "Proyecto",
+      "grupos": [
+        "ICCI-S6"
+      ],
+      "docentes": [
+        "Docente 05"
+      ],
+      "dia": 0,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 31,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Taller de Escritura Científica",
+      "nrc": "60281",
+      "tipo": "Obligatorio",
+      "grupos": [],
+      "docentes": [
+        "Docente 10"
+      ],
+      "dia": 0,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "Y1-001",
+      "cupo": 0,
+      "capacidad_sala": 20,
+      "choque": false
+    },
+    {
+      "asignatura": "Arquitectura y Org. de Computadores",
+      "nrc": "21972",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S6"
+      ],
+      "docentes": [
+        "Docente 64"
+      ],
+      "dia": 0,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "Y2-107",
+      "cupo": 28,
+      "capacidad_sala": 30,
+      "choque": false
+    },
+    {
+      "asignatura": "Capstone Project",
+      "nrc": "21108 / 20804",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S10",
+        "IenCI-S8"
+      ],
+      "docentes": [
+        "Docente 10"
+      ],
+      "dia": 0,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-032",
+      "cupo": 42,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "21943",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S2"
+      ],
+      "docentes": [
+        "Docente 46"
+      ],
+      "dia": 0,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-049",
+      "cupo": 25,
+      "capacidad_sala": 26,
+      "choque": false
+    },
+    {
+      "asignatura": "Redes de Computadores",
+      "nrc": "20538",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 62"
+      ],
+      "dia": 0,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-019",
+      "cupo": 21,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas Inteligentes",
+      "nrc": "22472",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 19"
+      ],
+      "dia": 0,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "V2-Univ",
+      "cupo": 32,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas de Información",
+      "nrc": "20643 / 20934",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S7",
+        "IenCI-S6"
+      ],
+      "docentes": [
+        "Docente 03"
+      ],
+      "dia": 0,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-006",
+      "cupo": 42,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas de Información II",
+      "nrc": "20805",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S8"
+      ],
+      "docentes": [
+        "Docente 02"
+      ],
+      "dia": 0,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 21,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Bases de Datos",
+      "nrc": "20637",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S5"
+      ],
+      "docentes": [
+        "Docente 24"
+      ],
+      "dia": 0,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "R-049",
+      "cupo": 21,
+      "capacidad_sala": 26,
+      "choque": false
+    },
+    {
+      "asignatura": "Gestión de Proyectos TI",
+      "nrc": "21615 / 22129",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S8"
+      ],
+      "docentes": [
+        "Docente 10"
+      ],
+      "dia": 0,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "R-043",
+      "cupo": 32,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "21968",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S2"
+      ],
+      "docentes": [
+        "Docente 43"
+      ],
+      "dia": 0,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "R-019",
+      "cupo": 25,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Proy. Integrador Prog. Avanzad",
+      "nrc": "21960",
+      "tipo": "Proyecto",
+      "grupos": [
+        "ICCI-S5"
+      ],
+      "docentes": [
+        "Docente 42"
+      ],
+      "dia": 0,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "Y1-001",
+      "cupo": 12,
+      "capacidad_sala": 20,
+      "choque": false
+    },
+    {
+      "asignatura": "Seguridad TI",
+      "nrc": "21969 / 21970",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S7"
+      ],
+      "docentes": [
+        "Docente 53"
+      ],
+      "dia": 0,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 47,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Tecnologías de Información",
+      "nrc": "22801",
+      "tipo": "Cátedra",
+      "grupos": [
+        "ICCI-S7"
+      ],
+      "docentes": [
+        "Docente 11"
+      ],
+      "dia": 0,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "R-032",
+      "cupo": 30,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Arquitectura de Sistemas",
+      "nrc": "21962",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S8"
+      ],
+      "docentes": [
+        "Docente 08"
+      ],
+      "dia": 0,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "R-019",
+      "cupo": 20,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas Inteligentes Integrados",
+      "nrc": "60285",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 47"
+      ],
+      "dia": 0,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "V2-Rob",
+      "cupo": 0,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "TIC en Procesos Mineros",
+      "nrc": "21965 / 21966",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S7"
+      ],
+      "docentes": [
+        "Docente 09"
+      ],
+      "dia": 0,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "R-031",
+      "cupo": 41,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Proyecto Integrador Gestión TI",
+      "nrc": "21951",
+      "tipo": "Proyecto",
+      "grupos": [
+        "ICCI-S8"
+      ],
+      "docentes": [
+        "Docente 09"
+      ],
+      "dia": 0,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "R-020",
+      "cupo": 21,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Electrotecnia",
+      "nrc": "21601 / 21602",
+      "tipo": "Laboratorio",
+      "grupos": [
+        "ICCI-S5",
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 44"
+      ],
+      "dia": 1,
+      "bloque": 0,
+      "dur": 2,
+      "sala": "U8",
+      "cupo": 18,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Internet de las Cosas",
+      "nrc": "21024 / 21958",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S7"
+      ],
+      "docentes": [
+        "Docente 37"
+      ],
+      "dia": 1,
+      "bloque": 0,
+      "dur": 2,
+      "sala": "R-020",
+      "cupo": 21,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "21968",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S2"
+      ],
+      "docentes": [
+        "Docente 43"
+      ],
+      "dia": 1,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "V2-Rob",
+      "cupo": 25,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "20385",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "PC-S3"
+      ],
+      "docentes": [
+        "Docente 13"
+      ],
+      "dia": 1,
+      "bloque": 0,
+      "dur": 2,
+      "sala": "R-006",
+      "cupo": 45,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas de Información II",
+      "nrc": "20805",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S8"
+      ],
+      "docentes": [
+        "Docente 02"
+      ],
+      "dia": 1,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "R-012",
+      "cupo": 21,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Tecnologías de Información",
+      "nrc": "22801",
+      "tipo": "Cátedra",
+      "grupos": [
+        "ICCI-S7"
+      ],
+      "docentes": [
+        "Docente 11"
+      ],
+      "dia": 1,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "R-032",
+      "cupo": 30,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Circuitos eléctricos I",
+      "nrc": "22803",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S3"
+      ],
+      "docentes": [
+        "Docente 38"
+      ],
+      "dia": 1,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-031",
+      "cupo": 21,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Electrotecnia",
+      "nrc": "21104 / 21672",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S5",
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 64"
+      ],
+      "dia": 1,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 50,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Proyecto Integrador Plataforma",
+      "nrc": "21974",
+      "tipo": "Proyecto",
+      "grupos": [
+        "ICCI-S7"
+      ],
+      "docentes": [
+        "Docente 34"
+      ],
+      "dia": 1,
+      "bloque": 1,
+      "dur": 2,
+      "sala": "R-019",
+      "cupo": 21,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Redacción Científica",
+      "nrc": "60271",
+      "tipo": "Obligatorio",
+      "grupos": [],
+      "docentes": [
+        "Docente 10"
+      ],
+      "dia": 1,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "Y1-104",
+      "cupo": 0,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Herramientas Computacionales para Ingeniería",
+      "nrc": "23957",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 67"
+      ],
+      "dia": 1,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "R-049",
+      "cupo": 21,
+      "capacidad_sala": 26,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "21963",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S2"
+      ],
+      "docentes": [
+        "Docente 18"
+      ],
+      "dia": 1,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "V2-Univ",
+      "cupo": 25,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación Avanzada",
+      "nrc": "20335",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S3"
+      ],
+      "docentes": [
+        "Docente 58"
+      ],
+      "dia": 1,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 40,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Arquitectura de Sistemas",
+      "nrc": "21962",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S8"
+      ],
+      "docentes": [
+        "Docente 08"
+      ],
+      "dia": 1,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-012",
+      "cupo": 20,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Circuitos Eléctricos II",
+      "nrc": "22804",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S4"
+      ],
+      "docentes": [
+        "Docente 54"
+      ],
+      "dia": 1,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "Y1-104",
+      "cupo": 15,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Electrotecnia",
+      "nrc": "20535 / 20536",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S5",
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 64"
+      ],
+      "dia": 1,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 50,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Ingeniería de Software",
+      "nrc": "20639",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S6"
+      ],
+      "docentes": [
+        "Docente 05"
+      ],
+      "dia": 1,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-023",
+      "cupo": 26,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Proyecto Des. e Integración de Sol.",
+      "nrc": "21592",
+      "tipo": "Obligatorio",
+      "grupos": [],
+      "docentes": [
+        "Docente 06"
+      ],
+      "dia": 1,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "V3-Rob",
+      "cupo": 12,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Análisis de Señales y Sistemas",
+      "nrc": "23822 / ADD",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S5"
+      ],
+      "docentes": [
+        "Docente 51"
+      ],
+      "dia": 1,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "R-023",
+      "cupo": 13,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Ciencia de Datos",
+      "nrc": "60279 / ADD",
+      "tipo": "Obligatorio",
+      "grupos": [],
+      "docentes": [
+        "Docente 19"
+      ],
+      "dia": 1,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "U8",
+      "cupo": 0,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Estructura de Datos",
+      "nrc": "20537",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 16"
+      ],
+      "dia": 1,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 45,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "21593",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "PC-S3"
+      ],
+      "docentes": [
+        "Docente 49"
+      ],
+      "dia": 1,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "R-043",
+      "cupo": 28,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Proyecto Integrador Gestión TI",
+      "nrc": "21951",
+      "tipo": "Proyecto",
+      "grupos": [
+        "ICCI-S8"
+      ],
+      "docentes": [
+        "Docente 09"
+      ],
+      "dia": 1,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "R-031",
+      "cupo": 21,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Bases de Datos",
+      "nrc": "20637",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S5"
+      ],
+      "docentes": [
+        "Docente 24"
+      ],
+      "dia": 1,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "V3-Rob",
+      "cupo": 21,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Ciberseguridad",
+      "nrc": "21136 / 21971 / 22166",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 53"
+      ],
+      "dia": 1,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 50,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Estructuras de Datos",
+      "nrc": "21950",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S4"
+      ],
+      "docentes": [
+        "Docente 16"
+      ],
+      "dia": 1,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "R-049",
+      "cupo": 22,
+      "capacidad_sala": 26,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "22824",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S2"
+      ],
+      "docentes": [
+        "Docente 40"
+      ],
+      "dia": 1,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "R-032",
+      "cupo": 32,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "20401",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "PC-S3"
+      ],
+      "docentes": [
+        "Docente 49"
+      ],
+      "dia": 1,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "Y2-107",
+      "cupo": 28,
+      "capacidad_sala": 30,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación Orientada a Objeto",
+      "nrc": "21961",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S3"
+      ],
+      "docentes": [
+        "Docente 08"
+      ],
+      "dia": 1,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "R-031",
+      "cupo": 21,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Proy. Integrador Prog. Avanzad",
+      "nrc": "21960",
+      "tipo": "Proyecto",
+      "grupos": [
+        "ICCI-S5"
+      ],
+      "docentes": [
+        "Docente 42"
+      ],
+      "dia": 1,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "R-006",
+      "cupo": 12,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Proyecto Redes de Computadores",
+      "nrc": "20642",
+      "tipo": "Proyecto",
+      "grupos": [
+        "IenCI-S6"
+      ],
+      "docentes": [
+        "Docente 25"
+      ],
+      "dia": 1,
+      "bloque": 5,
+      "dur": 2,
+      "sala": "V2-Univ",
+      "cupo": 21,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Redes de Computadores",
+      "nrc": "20807",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S8"
+      ],
+      "docentes": [
+        "Docente 62"
+      ],
+      "dia": 1,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "R-033",
+      "cupo": 21,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Introducción a Visión por Computador",
+      "nrc": "23960",
+      "tipo": "Electivo - Taller",
+      "grupos": [],
+      "docentes": [
+        "Docente 60"
+      ],
+      "dia": 2,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "V3-Rob",
+      "cupo": 0,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "21943",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S2"
+      ],
+      "docentes": [
+        "Docente 46"
+      ],
+      "dia": 2,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "V2-Rob",
+      "cupo": 25,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "21593",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "PC-S3"
+      ],
+      "docentes": [
+        "Docente 49"
+      ],
+      "dia": 2,
+      "bloque": 0,
+      "dur": 2,
+      "sala": "R-032",
+      "cupo": 28,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Diseño y Análisis de Algoritmo",
+      "nrc": "22799",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S7"
+      ],
+      "docentes": [
+        "Docente 66"
+      ],
+      "dia": 2,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-006",
+      "cupo": 21,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Redes de Computadores",
+      "nrc": "20538",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 62"
+      ],
+      "dia": 2,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-043",
+      "cupo": 21,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Seguridad TI",
+      "nrc": "21969 / 21970",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S7"
+      ],
+      "docentes": [
+        "Docente 53"
+      ],
+      "dia": 2,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 47,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Arquitectura y Org. de Computadores",
+      "nrc": "21972",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S6"
+      ],
+      "docentes": [
+        "Docente 64"
+      ],
+      "dia": 2,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "R-031",
+      "cupo": 28,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Matemática Avanzada",
+      "nrc": "23819",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S5"
+      ],
+      "docentes": [
+        "Docente 57"
+      ],
+      "dia": 2,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "R-006",
+      "cupo": 0,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "22824",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S2"
+      ],
+      "docentes": [
+        "Docente 40"
+      ],
+      "dia": 2,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 32,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Redacción Científica",
+      "nrc": "60271",
+      "tipo": "Obligatorio",
+      "grupos": [],
+      "docentes": [
+        "Docente 10"
+      ],
+      "dia": 2,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "Y1-001",
+      "cupo": 0,
+      "capacidad_sala": 20,
+      "choque": false
+    },
+    {
+      "asignatura": "Circuítos Análogos",
+      "nrc": "23820",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S5"
+      ],
+      "docentes": [
+        "Docente 51"
+      ],
+      "dia": 2,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "V2-Univ",
+      "cupo": 20,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Control Automático I",
+      "nrc": "23813",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S6"
+      ],
+      "docentes": [
+        "Docente 47"
+      ],
+      "dia": 2,
+      "bloque": 3,
+      "dur": 2,
+      "sala": "V3-Rob",
+      "cupo": 20,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Ingeniería de Requerimientos",
+      "nrc": "22827 / 22828",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 18"
+      ],
+      "dia": 2,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 32,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Ingeniería de Software",
+      "nrc": "20639",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S6"
+      ],
+      "docentes": [
+        "Docente 05"
+      ],
+      "dia": 2,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-049",
+      "cupo": 26,
+      "capacidad_sala": 26,
+      "choque": false
+    },
+    {
+      "asignatura": "Procesamiento Analítico de Dat",
+      "nrc": "21976 / 22130 / 22470",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 46"
+      ],
+      "dia": 2,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "Y2-107",
+      "cupo": 24,
+      "capacidad_sala": 30,
+      "choque": false
+    },
+    {
+      "asignatura": "Robótica Avanzada",
+      "nrc": "60284",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 48"
+      ],
+      "dia": 2,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-043",
+      "cupo": 0,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas Operativos",
+      "nrc": "20573 / 20716",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S7",
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 25"
+      ],
+      "dia": 2,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-019",
+      "cupo": 45,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Taller de Escritura Científica",
+      "nrc": "60281",
+      "tipo": "Obligatorio",
+      "grupos": [],
+      "docentes": [
+        "Docente 10"
+      ],
+      "dia": 2,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "Y1-104",
+      "cupo": 0,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Circuítos Digitales",
+      "nrc": "23821",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S5"
+      ],
+      "docentes": [
+        "Docente 56"
+      ],
+      "dia": 2,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "R-032",
+      "cupo": 20,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Estructuras de Datos",
+      "nrc": "21950",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S4"
+      ],
+      "docentes": [
+        "Docente 16"
+      ],
+      "dia": 2,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "R-043",
+      "cupo": 22,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Ingeniería de Datos",
+      "nrc": "60286",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 66"
+      ],
+      "dia": 2,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "R-006",
+      "cupo": 0,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Pr. intro a la Ing. Electrónica",
+      "nrc": "22805",
+      "tipo": "Taller",
+      "grupos": [
+        "ICEL-S4"
+      ],
+      "docentes": [
+        "Docente 51"
+      ],
+      "dia": 2,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "U8",
+      "cupo": 15,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "21968",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S2"
+      ],
+      "docentes": [
+        "Docente 43"
+      ],
+      "dia": 2,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "V2-Rob",
+      "cupo": 25,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Análisis de Señales y Sistemas",
+      "nrc": "23822 / ADD",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S5"
+      ],
+      "docentes": [
+        "Docente 51"
+      ],
+      "dia": 2,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "Y2-107",
+      "cupo": 13,
+      "capacidad_sala": 30,
+      "choque": false
+    },
+    {
+      "asignatura": "Aprendizaje Automático para Series de Tiempo",
+      "nrc": "60278",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 48"
+      ],
+      "dia": 2,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "Y1-005",
+      "cupo": 0,
+      "capacidad_sala": 20,
+      "choque": false
+    },
+    {
+      "asignatura": "Desarrollo de Soluciones Móviles",
+      "nrc": "20640",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S6"
+      ],
+      "docentes": [
+        "Docente 31"
+      ],
+      "dia": 2,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "R-033",
+      "cupo": 21,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Electrotecnia",
+      "nrc": "21599 / 21600",
+      "tipo": "Laboratorio",
+      "grupos": [
+        "ICCI-S5",
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 24"
+      ],
+      "dia": 2,
+      "bloque": 5,
+      "dur": 2,
+      "sala": "U8",
+      "cupo": 18,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Fundamentos de la Computación",
+      "nrc": "21952",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S6"
+      ],
+      "docentes": [
+        "Docente 10",
+        "Docente 19",
+        "Docente 66"
+      ],
+      "dia": 2,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "Y1-104",
+      "cupo": 21,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Ingeniería de Software",
+      "nrc": "20638",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S5"
+      ],
+      "docentes": [
+        "Docente 18"
+      ],
+      "dia": 2,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "R-012",
+      "cupo": 21,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Gestión de Proyectos Electrónicos",
+      "nrc": "23815",
+      "tipo": "Taller",
+      "grupos": [
+        "ICEL-S6"
+      ],
+      "docentes": [
+        "Docente 47"
+      ],
+      "dia": 2,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "V3-Rob",
+      "cupo": 20,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Modelos y Métodos para la Evaluación y Mejora de Procesos de Software",
+      "nrc": "ADD",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 05"
+      ],
+      "dia": 2,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "R-032",
+      "cupo": 0,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "21963",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S2"
+      ],
+      "docentes": [
+        "Docente 18"
+      ],
+      "dia": 2,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "R-043",
+      "cupo": 25,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación Orientada a Objeto",
+      "nrc": "21961",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S3"
+      ],
+      "docentes": [
+        "Docente 08"
+      ],
+      "dia": 2,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "V2-Rob",
+      "cupo": 21,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Proyecto Administración Middleware",
+      "nrc": "21964",
+      "tipo": "Proyecto",
+      "grupos": [
+        "IenCI-S5"
+      ],
+      "docentes": [
+        "Docente 06"
+      ],
+      "dia": 3,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "Y1-104",
+      "cupo": 21,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Práctica Pre-Profesional",
+      "nrc": "21106 / 21107",
+      "tipo": "Taller",
+      "grupos": [
+        "ICCI-S10",
+        "IenCI-S8"
+      ],
+      "docentes": [
+        "Docente 08"
+      ],
+      "dia": 3,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "",
+      "cupo": 62,
+      "capacidad_sala": null,
+      "choque": false
+    },
+    {
+      "asignatura": "Redes de Computadores",
+      "nrc": "20807",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S8"
+      ],
+      "docentes": [
+        "Docente 62"
+      ],
+      "dia": 3,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "R-049",
+      "cupo": 21,
+      "capacidad_sala": 26,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas Inteligentes",
+      "nrc": "60280 / ADD",
+      "tipo": "Obligatorio",
+      "grupos": [],
+      "docentes": [
+        "Docente 46",
+        "Docente 49"
+      ],
+      "dia": 3,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "R-032",
+      "cupo": 0,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Capstone Project",
+      "nrc": "21108 / 20804",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S10",
+        "IenCI-S8"
+      ],
+      "docentes": [
+        "Docente 10"
+      ],
+      "dia": 3,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-032",
+      "cupo": 42,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Circuitos Eléctricos II",
+      "nrc": "22804",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S4"
+      ],
+      "docentes": [
+        "Docente 54"
+      ],
+      "dia": 3,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 15,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Herramientas Computacionales para Ingeniería",
+      "nrc": "23958",
+      "tipo": "Electivo - Taller",
+      "grupos": [],
+      "docentes": [
+        "Docente 67"
+      ],
+      "dia": 3,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "V3-Rob",
+      "cupo": 0,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Procesamiento Analítico de Dat",
+      "nrc": "21976 / 22130 / 22470",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 46"
+      ],
+      "dia": 3,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-031",
+      "cupo": 24,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "21963",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S2"
+      ],
+      "docentes": [
+        "Docente 18"
+      ],
+      "dia": 3,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "Y2-107",
+      "cupo": 25,
+      "capacidad_sala": 30,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación Avanzada",
+      "nrc": "20335",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S3"
+      ],
+      "docentes": [
+        "Docente 58"
+      ],
+      "dia": 3,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-006",
+      "cupo": 40,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación Orientada a Objeto",
+      "nrc": "21961",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S3"
+      ],
+      "docentes": [
+        "Docente 08"
+      ],
+      "dia": 3,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-033",
+      "cupo": 21,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Proyecto Des. e Integración de Sol.",
+      "nrc": "21592",
+      "tipo": "Obligatorio",
+      "grupos": [],
+      "docentes": [
+        "Docente 06"
+      ],
+      "dia": 3,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "Y1-005",
+      "cupo": 12,
+      "capacidad_sala": 20,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas Embebidos",
+      "nrc": "23814",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S6"
+      ],
+      "docentes": [
+        "Docente 48"
+      ],
+      "dia": 3,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-019",
+      "cupo": 12,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Circuitos eléctricos I",
+      "nrc": "22803",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S3"
+      ],
+      "docentes": [
+        "Docente 38"
+      ],
+      "dia": 3,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "U8",
+      "cupo": 21,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Ingeniería de Software",
+      "nrc": "20638",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S5"
+      ],
+      "docentes": [
+        "Docente 18"
+      ],
+      "dia": 3,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "R-019",
+      "cupo": 21,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "21943",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S2"
+      ],
+      "docentes": [
+        "Docente 46"
+      ],
+      "dia": 3,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "R-031",
+      "cupo": 25,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Proyecto Integrador Software",
+      "nrc": "21949",
+      "tipo": "Proyecto",
+      "grupos": [
+        "ICCI-S6"
+      ],
+      "docentes": [
+        "Docente 05"
+      ],
+      "dia": 3,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 31,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Análisis de Señales y Sistemas",
+      "nrc": "23822 / ADD",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S5"
+      ],
+      "docentes": [
+        "Docente 51"
+      ],
+      "dia": 3,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-023",
+      "cupo": 13,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Evaluación de Proyectos TI",
+      "nrc": "21946",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S9"
+      ],
+      "docentes": [
+        "Docente 02"
+      ],
+      "dia": 3,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-049",
+      "cupo": 17,
+      "capacidad_sala": 26,
+      "choque": false
+    },
+    {
+      "asignatura": "Fundamentos de la Computación",
+      "nrc": "21952",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S6"
+      ],
+      "docentes": [
+        "Docente 10",
+        "Docente 19",
+        "Docente 66"
+      ],
+      "dia": 3,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "U8",
+      "cupo": 21,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Modelos y Métodos para la Evaluación y Mejora de Procesos de Software",
+      "nrc": "ADD",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 05"
+      ],
+      "dia": 3,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-020",
+      "cupo": 0,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "20389",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "PC-S3"
+      ],
+      "docentes": [
+        "Docente 49"
+      ],
+      "dia": 3,
+      "bloque": 3,
+      "dur": 2,
+      "sala": "R-031",
+      "cupo": 28,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Ingeniería de Datos",
+      "nrc": "60286",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 66"
+      ],
+      "dia": 3,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "U8",
+      "cupo": 0,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Int. al Desarrollo Web/Móvil",
+      "nrc": "21973",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S6"
+      ],
+      "docentes": [
+        "Docente 31"
+      ],
+      "dia": 3,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "R-032",
+      "cupo": 31,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Circuítos Digitales",
+      "nrc": "23821",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S5"
+      ],
+      "docentes": [
+        "Docente 56"
+      ],
+      "dia": 3,
+      "bloque": 5,
+      "dur": 2,
+      "sala": "R-031",
+      "cupo": 20,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "20387",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "PC-S3"
+      ],
+      "docentes": [
+        "Docente 44"
+      ],
+      "dia": 3,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "V2-Rob",
+      "cupo": 28,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "20401",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "PC-S3"
+      ],
+      "docentes": [
+        "Docente 49"
+      ],
+      "dia": 3,
+      "bloque": 5,
+      "dur": 2,
+      "sala": "R-032",
+      "cupo": 28,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Estructura de Datos",
+      "nrc": "20537",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 16"
+      ],
+      "dia": 3,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "R-006",
+      "cupo": 45,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "TIC en Procesos Mineros",
+      "nrc": "21965 / 21966",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S7"
+      ],
+      "docentes": [
+        "Docente 09"
+      ],
+      "dia": 3,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "R-019",
+      "cupo": 41,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Aprendizaje Automático para Series de Tiempo",
+      "nrc": "60278",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 48"
+      ],
+      "dia": 4,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "Y2-105",
+      "cupo": 0,
+      "capacidad_sala": 14,
+      "choque": false
+    },
+    {
+      "asignatura": "Circuitos Eléctricos II",
+      "nrc": "22804",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S4"
+      ],
+      "docentes": [
+        "Docente 54"
+      ],
+      "dia": 4,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "R-023",
+      "cupo": 15,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Computación de Alto Rendimiento",
+      "nrc": "ADD / 22825 / 22826",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 08"
+      ],
+      "dia": 4,
+      "bloque": 0,
+      "dur": 2,
+      "sala": "R-049",
+      "cupo": 21,
+      "capacidad_sala": 26,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "20389",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "PC-S3"
+      ],
+      "docentes": [
+        "Docente 49"
+      ],
+      "dia": 4,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "V2-Univ",
+      "cupo": 28,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación Avanzada",
+      "nrc": "20335",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S3"
+      ],
+      "docentes": [
+        "Docente 58"
+      ],
+      "dia": 4,
+      "bloque": 0,
+      "dur": 1,
+      "sala": "R-031",
+      "cupo": 40,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Ciencia de Datos",
+      "nrc": "60279 / ADD",
+      "tipo": "Obligatorio",
+      "grupos": [],
+      "docentes": [
+        "Docente 19"
+      ],
+      "dia": 4,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-006",
+      "cupo": 0,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Electrotecnia",
+      "nrc": "21597 / 21598",
+      "tipo": "Laboratorio",
+      "grupos": [
+        "ICCI-S5",
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 24"
+      ],
+      "dia": 4,
+      "bloque": 1,
+      "dur": 2,
+      "sala": "U8",
+      "cupo": 18,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Int. al modelado 3D y fabricac",
+      "nrc": "21947 / 22131",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 14"
+      ],
+      "dia": 4,
+      "bloque": 1,
+      "dur": 2,
+      "sala": "R-031",
+      "cupo": 14,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Robótica Avanzada",
+      "nrc": "60284",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 48"
+      ],
+      "dia": 4,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-032",
+      "cupo": 0,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas Inteligentes",
+      "nrc": "60280 / ADD",
+      "tipo": "Obligatorio",
+      "grupos": [],
+      "docentes": [
+        "Docente 46",
+        "Docente 49"
+      ],
+      "dia": 4,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "R-023",
+      "cupo": 0,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Téc. y Met. de Prog. Avanzada",
+      "nrc": "21975",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S3"
+      ],
+      "docentes": [
+        "Docente 32"
+      ],
+      "dia": 4,
+      "bloque": 1,
+      "dur": 1,
+      "sala": "Y1-001",
+      "cupo": 12,
+      "capacidad_sala": 20,
+      "choque": false
+    },
+    {
+      "asignatura": "Introducción a Visión por Computador",
+      "nrc": "23959",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 60"
+      ],
+      "dia": 4,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "V2-Rob",
+      "cupo": 0,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Matemática Avanzada",
+      "nrc": "23819",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S5"
+      ],
+      "docentes": [
+        "Docente 57"
+      ],
+      "dia": 4,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "Y1-005",
+      "cupo": 0,
+      "capacidad_sala": 20,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas Inteligentes",
+      "nrc": "22472",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 19"
+      ],
+      "dia": 4,
+      "bloque": 2,
+      "dur": 1,
+      "sala": "R-023",
+      "cupo": 32,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Circuitos eléctricos I",
+      "nrc": "22803",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S3"
+      ],
+      "docentes": [
+        "Docente 38"
+      ],
+      "dia": 4,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-023",
+      "cupo": 21,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Circuítos Análogos",
+      "nrc": "23820",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S5"
+      ],
+      "docentes": [
+        "Docente 51"
+      ],
+      "dia": 4,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-012",
+      "cupo": 20,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Estructuras de Datos",
+      "nrc": "21950",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S4"
+      ],
+      "docentes": [
+        "Docente 16"
+      ],
+      "dia": 4,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-049",
+      "cupo": 22,
+      "capacidad_sala": 26,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "22824",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S2"
+      ],
+      "docentes": [
+        "Docente 40"
+      ],
+      "dia": 4,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "R-032",
+      "cupo": 32,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Proyecto Programación Avanzada",
+      "nrc": "21959",
+      "tipo": "Proyecto",
+      "grupos": [
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 28"
+      ],
+      "dia": 4,
+      "bloque": 3,
+      "dur": 1,
+      "sala": "Y1-004",
+      "cupo": 21,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas Embebidos",
+      "nrc": "23814",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S6"
+      ],
+      "docentes": [
+        "Docente 48"
+      ],
+      "dia": 4,
+      "bloque": 3,
+      "dur": 2,
+      "sala": "U8",
+      "cupo": 12,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Ciberseguridad",
+      "nrc": "21136 / 21971 / 22166",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 53"
+      ],
+      "dia": 4,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 50,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Electrotecnia",
+      "nrc": "21595 / 21596",
+      "tipo": "Laboratorio",
+      "grupos": [
+        "ICCI-S5",
+        "IenCI-S4"
+      ],
+      "docentes": [
+        "Docente 24"
+      ],
+      "dia": 4,
+      "bloque": 4,
+      "dur": 2,
+      "sala": "V3-Rob",
+      "cupo": 18,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Ingeniería de Software",
+      "nrc": "20639",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S6"
+      ],
+      "docentes": [
+        "Docente 05"
+      ],
+      "dia": 4,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "R-019",
+      "cupo": 26,
+      "capacidad_sala": 45,
+      "choque": false
+    },
+    {
+      "asignatura": "Proyecto Administración Middleware",
+      "nrc": "21964",
+      "tipo": "Proyecto",
+      "grupos": [
+        "IenCI-S5"
+      ],
+      "docentes": [
+        "Docente 06"
+      ],
+      "dia": 4,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "Y2-107",
+      "cupo": 21,
+      "capacidad_sala": 30,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas Inteligentes Integrados",
+      "nrc": "60285",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 47"
+      ],
+      "dia": 4,
+      "bloque": 4,
+      "dur": 1,
+      "sala": "Y1-004",
+      "cupo": 0,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Gestión de Proyectos Electrónicos",
+      "nrc": "23815",
+      "tipo": "Taller",
+      "grupos": [
+        "ICEL-S6"
+      ],
+      "docentes": [
+        "Docente 47"
+      ],
+      "dia": 4,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "U8",
+      "cupo": 20,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Gestión de Proyectos TI",
+      "nrc": "21615 / 22129",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S8"
+      ],
+      "docentes": [
+        "Docente 10"
+      ],
+      "dia": 4,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "R-031",
+      "cupo": 32,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "20385",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "PC-S3"
+      ],
+      "docentes": [
+        "Docente 13"
+      ],
+      "dia": 4,
+      "bloque": 5,
+      "dur": 1,
+      "sala": "Y1-003",
+      "cupo": 45,
+      "capacidad_sala": 50,
+      "choque": false
+    },
+    {
+      "asignatura": "Aprendizaje Profundo para Visión por Computador",
+      "nrc": "60277 / 60287",
+      "tipo": "Electivo",
+      "grupos": [],
+      "docentes": [
+        "Docente 51"
+      ],
+      "dia": 4,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "V2-Rob",
+      "cupo": 0,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Bases de Datos",
+      "nrc": "20637",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "IenCI-S5"
+      ],
+      "docentes": [
+        "Docente 24"
+      ],
+      "dia": 4,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "R-033",
+      "cupo": 21,
+      "capacidad_sala": 22,
+      "choque": false
+    },
+    {
+      "asignatura": "Control Automático I",
+      "nrc": "23813",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICEL-S6"
+      ],
+      "docentes": [
+        "Docente 47"
+      ],
+      "dia": 4,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "R-031",
+      "cupo": 20,
+      "capacidad_sala": 41,
+      "choque": false
+    },
+    {
+      "asignatura": "Evaluación de Proyectos TI",
+      "nrc": "21946",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S9"
+      ],
+      "docentes": [
+        "Docente 02"
+      ],
+      "dia": 4,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "Y1-104",
+      "cupo": 17,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Int. al Desarrollo Web/Móvil",
+      "nrc": "21973",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S6"
+      ],
+      "docentes": [
+        "Docente 31"
+      ],
+      "dia": 4,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "V2-Univ",
+      "cupo": 31,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Sistemas de Información",
+      "nrc": "20643 / 20934",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "ICCI-S7",
+        "IenCI-S6"
+      ],
+      "docentes": [
+        "Docente 03"
+      ],
+      "dia": 4,
+      "bloque": 6,
+      "dur": 1,
+      "sala": "R-032",
+      "cupo": 42,
+      "capacidad_sala": 42,
+      "choque": false
+    },
+    {
+      "asignatura": "Electrotecnia",
+      "nrc": "22532",
+      "tipo": "Laboratorio",
+      "grupos": [
+        "ICCI-S5"
+      ],
+      "docentes": [
+        "Docente 27"
+      ],
+      "dia": 5,
+      "bloque": 1,
+      "dur": 2,
+      "sala": "U8",
+      "cupo": 18,
+      "capacidad_sala": 21,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "20387",
+      "tipo": "Obligatorio",
+      "grupos": [
+        "PC-S3"
+      ],
+      "docentes": [
+        "Docente 44"
+      ],
+      "dia": 5,
+      "bloque": 1,
+      "dur": 2,
+      "sala": "V2-Rob",
+      "cupo": 28,
+      "capacidad_sala": 32,
+      "choque": false
+    },
+    {
+      "asignatura": "Programación",
+      "nrc": "21034",
+      "tipo": "Cátedra",
+      "grupos": [
+        "Geo-S4"
+      ],
+      "docentes": [
+        "Docente 07"
+      ],
+      "dia": 5,
+      "bloque": 3,
+      "dur": 2,
+      "sala": "R-043",
+      "cupo": 31,
+      "capacidad_sala": 32,
+      "choque": false
+    }
+  ]
+}

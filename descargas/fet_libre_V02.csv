@@ -1,0 +1,160 @@
+﻿asignatura,nrc,codigo,tipo,programas,grupos,docentes,dia,bloque,dur,sala,cupo,capacidad_sala,choque
+Electrotecnia,21104 / 21672,DAIS-00703 / DAIS-00403,Obligatorio,ICCI / IenCI,ICCI-S5 | IenCI-S4,Docente 64,0,0,1,Y1-003,50,50,False
+Ingeniería de Datos,60286,DAIS-01907,Electivo,PDIA,,Docente 66,0,0,1,R-049,0,26,False
+Programación,21968,DAIS-00204,Obligatorio,ICCI,ICCI-S2,Docente 43,0,0,1,R-032,25,42,False
+Bases de Datos,20637,DAIS-00509,Obligatorio,IenCI,IenCI-S5,Docente 24,0,1,1,R-023,21,32,False
+Estructuras de Datos,21950,DAIS-00407,Obligatorio,ICCI,ICCI-S4,Docente 16,0,1,1,R-012,22,22,False
+Fundamentos de la Computación,21952,DAIS-00503,Obligatorio,ICCI,ICCI-S6,Docente 10 | Docente 19 | Docente 66,0,1,1,V3-Rob,21,21,False
+Pr. intro a la Ing. Electrónica,22805,FAIC-00401,Taller,ICEL,ICEL-S4,Docente 51,0,1,1,R-049,15,26,False
+Programación,20401,DAIS-00200,Obligatorio,PC,PC-S3,Docente 49,0,1,2,V2-Univ,28,32,False
+Programación Orientada a Objeto,21961,DAIS-00307,Obligatorio,ICCI,ICCI-S3,Docente 08,0,1,1,R-032,21,42,False
+Proyecto Programación Avanzada,21959,DAIS-00406,Proyecto,IenCI,IenCI-S4,Docente 28,0,1,1,Y1-104,21,21,False
+Proy. Integrador Prog. Avanzad,21960,DAIS-00523,Proyecto,ICCI,ICCI-S5,Docente 42,0,2,1,Y1-001,12,20,False
+Proyecto Administración Middleware,21964,DAIS-00519,Proyecto,IenCI,IenCI-S5,Docente 06,0,2,1,V3-Rob,21,21,False
+Taller de Escritura Científica,60281,DAIS-02408,Obligatorio,PDIA,,Docente 10,0,2,1,R-020,0,22,False
+Aprendizaje Profundo para Visión por Computador,60277 / 60287,DAIS-01652 / DAIS-01911,Electivo,PDIA / PMII,,Docente 51,0,3,1,V3-Rob,0,21,False
+Ciberseguridad,21136 / 21971 / 22166,DAIS-09062 / DAIS-09069 / MNOR-00014,Electivo,ICCI / ICEL / IenCI,,Docente 53,0,3,1,Y1-003,50,50,False
+Ciencia de Datos,60279 / ADD,DAIS-02406 / DAIS-01678,Obligatorio,PDIA / PMII,,Docente 19,0,3,1,R-049,0,26,False
+Programación,21593,DAIS-00200,Obligatorio,PC,PC-S3,Docente 49,0,3,1,V2-Univ,28,32,False
+Proyecto Integrador Software,21949,DAIS-00627,Proyecto,ICCI,ICCI-S6,Docente 05,0,3,1,R-023,31,32,False
+Proyecto Redes de Computadores,20642,DAIS-00610,Proyecto,IenCI,IenCI-S6,Docente 25,0,3,2,Y2-107,21,30,False
+Sistemas Inteligentes Integrados,60285,DAIS-01902,Electivo,PDIA,,Docente 47,0,3,1,R-012,0,22,False
+Téc. y Met. de Prog. Avanzada,21975,DAIS-00308,Obligatorio,ICCI,ICCI-S3,Docente 32,0,3,1,R-033,12,22,False
+Circuitos Eléctricos II,22804,FAIC-00400,Obligatorio,ICEL,ICEL-S4,Docente 54,0,4,1,R-012,15,22,False
+Diseño y Análisis de Algoritmo,22799,DAIS-00603,Obligatorio,ICCI,ICCI-S7,Docente 66,0,4,1,R-033,21,22,False
+Evaluación de Proyectos TI,21946,DAIS-00903,Obligatorio,ICCI,ICCI-S9,Docente 02,0,4,1,Y1-005,17,20,False
+Gestión de Proyectos Electrónicos,23815,FAIC-00603,Taller,ICEL,ICEL-S6,Docente 47,0,4,1,Y1-004,20,21,False
+Ingeniería de Requerimientos,22827 / 22828,DAIS-09081 / DAIS-09085,Electivo,ICCI / IenCI,,Docente 18,0,4,1,R-019,32,45,False
+Ingeniería de Software,20639,DAIS-00605,Obligatorio,ICCI,ICCI-S6,Docente 05,0,4,1,V2-Univ,26,32,False
+Programación,20389,DAIS-00200,Obligatorio,PC,PC-S3,Docente 49,0,4,2,V2-Rob,28,32,False
+Análisis de Señales y Sistemas,23822 / ADD,FAIC-00504,Obligatorio,ICEL / IenCI/ICCI,ICEL-S5,Docente 51,0,5,1,Y1-104,13,21,False
+Desarrollo de Soluciones Móviles,20640,DAIS-00609,Obligatorio,IenCI,IenCI-S6,Docente 31,0,5,1,R-033,21,22,False
+Seguridad TI,21969 / 21970,DAIS-00709 / DAIS-09078,Obligatorio,ICCI / IenCI,IenCI-S7,Docente 53,0,5,1,Y1-003,47,50,False
+Sistemas Embebidos,23814,FAIC-00602,Obligatorio,ICEL,ICEL-S6,Docente 48,0,5,1,R-023,12,32,False
+Sistemas Inteligentes,22472,DAIS-09066,Electivo,IenCI/ICCI,,Docente 19,0,5,1,R-031,32,41,False
+Aprendizaje Automático para Series de Tiempo,60278,DAIS-01674,Electivo,PMII,,Docente 48,0,6,1,R-006,0,45,False
+Programación,21943,DAIS-00201,Obligatorio,IenCI,IenCI-S2,Docente 46,0,6,1,R-049,25,26,False
+Proyecto Administración Middleware,21964,DAIS-00519,Proyecto,IenCI,IenCI-S5,Docente 06,1,0,1,R-031,21,41,False
+Sistemas Operativos,20573 / 20716,DAIS-00303 / DAIS-00705,Obligatorio,ICCI / IenCI,ICCI-S7 | IenCI-S4,Docente 25,1,0,1,Y1-003,45,50,False
+Control Automático I,23813,FAIC-00600,Obligatorio,ICEL,ICEL-S6,Docente 47,1,1,2,V2-Univ,20,32,False
+Ingeniería de Software,20638,DAIS-00518,Obligatorio,IenCI,IenCI-S5,Docente 18,1,1,1,R-049,21,26,False
+Int. al Desarrollo Web/Móvil,21973,DAIS-00626,Obligatorio,ICCI,ICCI-S6,Docente 31,1,1,1,R-031,31,41,False
+Programación,22824,DAIS-00201,Obligatorio,IenCI,IenCI-S2,Docente 40,1,1,1,R-043,32,32,False
+Programación,20385,DAIS-00200,Obligatorio,PC,PC-S3,Docente 13,1,1,1,Y1-003,45,50,False
+Redes de Computadores,20538,DAIS-00404,Obligatorio,IenCI,IenCI-S4,Docente 62,1,1,1,R-012,21,22,False
+Sistemas de Información,20643 / 20934,DAIS-00607 / DAIS-00810,Obligatorio,ICCI / IenCI,ICCI-S7 | IenCI-S6,Docente 03,1,1,1,R-019,42,45,False
+Análisis de Señales y Sistemas,23822 / ADD,FAIC-00504,Obligatorio,ICEL / IenCI/ICCI,ICEL-S5,Docente 51,1,2,1,Y2-105,13,14,False
+Bases de Datos,20637,DAIS-00509,Obligatorio,IenCI,IenCI-S5,Docente 24,1,2,1,U8,21,21,False
+Estructura de Datos,20537,DAIS-00401,Obligatorio,IenCI,IenCI-S4,Docente 16,1,2,1,R-006,45,45,False
+Programación,21963,DAIS-00204,Obligatorio,ICCI,ICCI-S2,Docente 18,1,2,1,R-031,25,41,False
+Programación Avanzada,20335,DAIS-00302,Obligatorio,IenCI,IenCI-S3,Docente 58,1,2,1,R-032,40,42,False
+Proyecto Integrador Software,21949,DAIS-00627,Proyecto,ICCI,ICCI-S6,Docente 05,1,2,1,R-019,31,45,False
+Sistemas Inteligentes,22472,DAIS-09066,Electivo,IenCI/ICCI,,Docente 19,1,2,1,R-023,32,32,False
+Arquitectura y Org. de Computadores,21972,DAIS-00505,Obligatorio,ICCI,ICCI-S6,Docente 64,1,3,1,V2-Rob,28,32,False
+Electrotecnia,21595 / 21596,DAIS-00403 / DAIS-00703,Laboratorio,ICCI / IenCI,ICCI-S5 | IenCI-S4,Docente 24,1,3,2,Y1-005,18,20,False
+Herramientas Computacionales para Ingeniería,23958,DAIS-00540,Electivo - Taller,ICEL,,Docente 67,1,3,1,R-032,0,42,False
+Proyecto Integrador Gestión TI,21951,DAIS-00824,Proyecto,ICCI,ICCI-S8,Docente 09,1,3,1,Y1-003,21,50,False
+Tecnologías de Información,22801,DAIS-00305,Cátedra,ICCI,ICCI-S7,Docente 11,1,3,1,R-019,30,45,False
+Arquitectura de Sistemas,21962,DAIS-00822,Obligatorio,ICCI,ICCI-S8,Docente 08,1,4,1,R-033,20,22,False
+Circuitos eléctricos I,22803,FAIC-00300,Obligatorio,ICEL,ICEL-S3,Docente 38,1,4,1,R-012,21,22,False
+Seguridad TI,21969 / 21970,DAIS-00709 / DAIS-09078,Obligatorio,ICCI / IenCI,IenCI-S7,Docente 53,1,4,1,Y1-003,47,50,False
+Sistemas Inteligentes,60280 / ADD,DAIS-02407 / DAIS-01680,Obligatorio,PDIA / PMII,,Docente 46 | Docente 49,1,4,1,R-006,0,45,False
+Circuítos Digitales,23821,FAIC-00503,Obligatorio,ICEL,ICEL-S5,Docente 56,1,5,1,R-033,20,22,False
+Diseño y Análisis de Algoritmo,22799,DAIS-00603,Obligatorio,ICCI,ICCI-S7,Docente 66,1,5,1,U8,21,21,False
+Proy. Integrador Prog. Avanzad,21960,DAIS-00523,Proyecto,ICCI,ICCI-S5,Docente 42,1,5,1,Y1-004,12,21,False
+Práctica Pre-Profesional,21106 / 21107,DAIS-08233 / DAIS-08603,Taller,ICCI / IenCI,ICCI-S10 | IenCI-S8,Docente 08,1,5,1,,62,,False
+Herramientas Computacionales para Ingeniería,23957,DAIS-00540,Electivo,ICEL,,Docente 67,1,6,1,R-031,21,41,False
+Programación Orientada a Objeto,21961,DAIS-00307,Obligatorio,ICCI,ICCI-S3,Docente 08,1,6,1,Y1-104,21,21,False
+Sistemas de Información II,20805,DAIS-00910,Obligatorio,ICCI,ICCI-S8,Docente 02,1,6,1,V2-Univ,21,32,False
+Int. al Desarrollo Web/Móvil,21973,DAIS-00626,Obligatorio,ICCI,ICCI-S6,Docente 31,2,0,1,R-019,31,45,False
+Sistemas Operativos,20573 / 20716,DAIS-00303 / DAIS-00705,Obligatorio,ICCI / IenCI,ICCI-S7 | IenCI-S4,Docente 25,2,0,1,Y1-003,45,50,False
+Estructura de Datos,20537,DAIS-00401,Obligatorio,IenCI,IenCI-S4,Docente 16,2,1,1,R-006,45,45,False
+Ingeniería de Software,20639,DAIS-00605,Obligatorio,ICCI,ICCI-S6,Docente 05,2,1,1,R-023,26,32,False
+Redes de Computadores,20807,DAIS-00815,Obligatorio,ICCI,ICCI-S8,Docente 62,2,1,1,Y1-104,21,21,False
+Sistemas de Información,20643 / 20934,DAIS-00607 / DAIS-00810,Obligatorio,ICCI / IenCI,ICCI-S7 | IenCI-S6,Docente 03,2,1,1,Y1-003,42,50,False
+Bases de Datos,20637,DAIS-00509,Obligatorio,IenCI,IenCI-S5,Docente 24,2,2,1,V3-Rob,21,21,False
+Control Automático I,23813,FAIC-00600,Obligatorio,ICEL,ICEL-S6,Docente 47,2,2,1,R-006,20,45,False
+Fundamentos de la Computación,21952,DAIS-00503,Obligatorio,ICCI,ICCI-S6,Docente 10 | Docente 19 | Docente 66,2,2,1,R-019,21,45,False
+Matemática Avanzada,23819,FAIC-00501,Obligatorio,ICEL,ICEL-S5,Docente 57,2,2,1,R-043,0,32,False
+TIC en Procesos Mineros,21965 / 21966,DAIS-00707 / DAIS-09079,Obligatorio,ICCI / IenCI,IenCI-S7,Docente 09,2,2,1,R-032,41,42,False
+Circuítos Digitales,23821,FAIC-00503,Obligatorio,ICEL,ICEL-S5,Docente 56,2,3,2,R-006,20,45,False
+Modelos y Métodos para la Evaluación y Mejora de Procesos de Software,ADD,DAIS-01679,Electivo,PMII,,Docente 05,2,3,1,R-020,0,22,False
+Pr. intro a la Ing. Electrónica,22805,FAIC-00401,Taller,ICEL,ICEL-S4,Docente 51,2,3,1,Y1-005,15,20,False
+Programación,21943,DAIS-00201,Obligatorio,IenCI,IenCI-S2,Docente 46,2,3,1,R-023,25,32,False
+Redacción Científica,60271,DAIS-02254,Obligatorio,PMII,,Docente 10,2,3,1,R-012,0,22,False
+Aprendizaje Profundo para Visión por Computador,60277 / 60287,DAIS-01652 / DAIS-01911,Electivo,PDIA / PMII,,Docente 51,2,4,1,R-019,0,45,False
+Capstone Project,21108 / 20804,DAIS-00818 / DAIS-00817,Obligatorio,ICCI / IenCI,ICCI-S10 | IenCI-S8,Docente 10,2,4,1,Y1-003,42,50,False
+Programación,21968,DAIS-00204,Obligatorio,ICCI,ICCI-S2,Docente 43,2,4,1,V2-Rob,25,32,False
+Programación,22824,DAIS-00201,Obligatorio,IenCI,IenCI-S2,Docente 40,2,4,1,R-023,32,32,False
+Redes de Computadores,20538,DAIS-00404,Obligatorio,IenCI,IenCI-S4,Docente 62,2,4,1,Y2-107,21,30,False
+Aprendizaje Automático para Series de Tiempo,60278,DAIS-01674,Electivo,PMII,,Docente 48,2,5,1,V3-Rob,0,21,False
+Circuítos Análogos,23820,FAIC-00502,Obligatorio,ICEL,ICEL-S5,Docente 51,2,5,1,R-020,20,22,False
+Electrotecnia,21597 / 21598,DAIS-00403 / DAIS-00703,Laboratorio,ICCI / IenCI,ICCI-S5 | IenCI-S4,Docente 24,2,5,2,R-033,18,22,False
+Análisis de Señales y Sistemas,23822 / ADD,FAIC-00504,Obligatorio,ICEL / IenCI/ICCI,ICEL-S5,Docente 51,2,6,1,R-006,13,45,False
+Introducción a Visión por Computador,23960,DAIS-00530,Electivo - Taller,ICEL,,Docente 60,2,6,1,V2-Rob,0,32,False
+Procesamiento Analítico de Dat,21976 / 22130 / 22470,DAIS-09076 / DAIS-09089 / MNOR-00087,Electivo,ICCI / IenCI / MDS,,Docente 46,2,6,1,R-043,24,32,False
+Programación,20401,DAIS-00200,Obligatorio,PC,PC-S3,Docente 49,2,6,1,V2-Univ,28,32,False
+Programación Orientada a Objeto,21961,DAIS-00307,Obligatorio,ICCI,ICCI-S3,Docente 08,2,6,1,R-031,21,41,False
+Proyecto Des. e Integración de Sol.,21592,DAIS-00720,Obligatorio,IenCI,,Docente 06,2,6,1,U8,12,21,False
+Circuitos Eléctricos II,22804,FAIC-00400,Obligatorio,ICEL,ICEL-S4,Docente 54,3,0,1,V2-Rob,15,32,False
+Computación de Alto Rendimiento,ADD / 22825 / 22826,DAIS-09082 / DAIS-09070,Electivo,ICCI / ICEL / IenCI,,Docente 08,3,0,2,U8,21,21,False
+Electrotecnia,20535 / 20536,DAIS-00403 / DAIS-00703,Obligatorio,ICCI / IenCI,ICCI-S5 | IenCI-S4,Docente 64,3,0,1,Y1-003,50,50,False
+Ingeniería de Datos,60286,DAIS-01907,Electivo,PDIA,,Docente 66,3,0,1,R-049,0,26,False
+Programación,21943,DAIS-00201,Obligatorio,IenCI,IenCI-S2,Docente 46,3,0,1,V2-Univ,25,32,False
+Sistemas Embebidos,23814,FAIC-00602,Obligatorio,ICEL,ICEL-S6,Docente 48,3,0,2,R-032,12,42,False
+Programación,21968,DAIS-00204,Obligatorio,ICCI,ICCI-S2,Docente 43,3,1,1,Y1-003,25,50,False
+Proyecto Programación Avanzada,21959,DAIS-00406,Proyecto,IenCI,IenCI-S4,Docente 28,3,1,1,R-043,21,32,False
+Sistemas Inteligentes,60280 / ADD,DAIS-02407 / DAIS-01680,Obligatorio,PDIA / PMII,,Docente 46 | Docente 49,3,1,1,Y1-004,0,21,False
+Arquitectura y Org. de Computadores,21972,DAIS-00505,Obligatorio,ICCI,ICCI-S6,Docente 64,3,2,1,R-032,28,42,False
+Estructura de Datos,20537,DAIS-00401,Obligatorio,IenCI,IenCI-S4,Docente 16,3,2,1,Y1-003,45,50,False
+Redes de Computadores,20807,DAIS-00815,Obligatorio,ICCI,ICCI-S8,Docente 62,3,2,1,R-012,21,22,False
+Taller de Escritura Científica,60281,DAIS-02408,Obligatorio,PDIA,,Docente 10,3,2,1,Y2-107,0,30,False
+Capstone Project,21108 / 20804,DAIS-00818 / DAIS-00817,Obligatorio,ICCI / IenCI,ICCI-S10 | IenCI-S8,Docente 10,3,3,1,R-006,42,45,False
+Estructuras de Datos,21950,DAIS-00407,Obligatorio,ICCI,ICCI-S4,Docente 16,3,3,1,Y2-107,22,30,False
+Programación Avanzada,20335,DAIS-00302,Obligatorio,IenCI,IenCI-S3,Docente 58,3,3,1,Y1-003,40,50,False
+Circuitos eléctricos I,22803,FAIC-00300,Obligatorio,ICEL,ICEL-S3,Docente 38,3,4,1,R-049,21,26,False
+Evaluación de Proyectos TI,21946,DAIS-00903,Obligatorio,ICCI,ICCI-S9,Docente 02,3,4,1,Y1-004,17,21,False
+Gestión de Proyectos TI,21615 / 22129,DAIS-00704 / DAIS-09084,Obligatorio,ICCI / IenCI,ICCI-S8,Docente 10,3,4,1,R-031,32,41,False
+Programación,21963,DAIS-00204,Obligatorio,ICCI,ICCI-S2,Docente 18,3,4,1,R-006,25,45,False
+Programación,21593,DAIS-00200,Obligatorio,PC,PC-S3,Docente 49,3,4,2,Y1-003,28,50,False
+Robótica Avanzada,60284,DAIS-01901,Electivo,PDIA,,Docente 48,3,4,1,Y2-107,0,30,False
+Tecnologías de Información,22801,DAIS-00305,Cátedra,ICCI,ICCI-S7,Docente 11,3,4,1,R-043,30,32,False
+Ciencia de Datos,60279 / ADD,DAIS-02406 / DAIS-01678,Obligatorio,PDIA / PMII,,Docente 19,3,5,1,R-023,0,32,False
+Circuítos Análogos,23820,FAIC-00502,Obligatorio,ICEL,ICEL-S5,Docente 51,3,5,1,Y1-104,20,21,False
+Desarrollo de Soluciones Móviles,20640,DAIS-00609,Obligatorio,IenCI,IenCI-S6,Docente 31,3,5,1,U8,21,21,False
+Ingeniería de Software,20638,DAIS-00518,Obligatorio,IenCI,IenCI-S5,Docente 18,3,5,1,R-006,21,45,False
+Sistemas Inteligentes Integrados,60285,DAIS-01902,Electivo,PDIA,,Docente 47,3,5,1,R-043,0,32,False
+Sistemas de Información II,20805,DAIS-00910,Obligatorio,ICCI,ICCI-S8,Docente 02,3,5,1,R-020,21,22,False
+Proyecto Des. e Integración de Sol.,21592,DAIS-00720,Obligatorio,IenCI,,Docente 06,3,6,1,Y1-003,12,50,False
+Redacción Científica,60271,DAIS-02254,Obligatorio,PMII,,Docente 10,3,6,1,Y1-005,0,20,False
+Circuitos Eléctricos II,22804,FAIC-00400,Obligatorio,ICEL,ICEL-S4,Docente 54,4,0,1,Y1-104,15,21,False
+Programación,21963,DAIS-00204,Obligatorio,ICCI,ICCI-S2,Docente 18,4,0,1,Y2-107,25,30,False
+Programación,20389,DAIS-00200,Obligatorio,PC,PC-S3,Docente 49,4,1,1,Y2-107,28,30,False
+Proyecto Integrador Plataforma,21974,DAIS-00724,Proyecto,ICCI,ICCI-S7,Docente 34,4,1,2,R-006,21,45,False
+Circuitos eléctricos I,22803,FAIC-00300,Obligatorio,ICEL,ICEL-S3,Docente 38,4,2,1,R-020,21,22,False
+Gestión de Proyectos Electrónicos,23815,FAIC-00603,Taller,ICEL,ICEL-S6,Docente 47,4,2,1,Y1-001,20,20,False
+Ingeniería de Software,20639,DAIS-00605,Obligatorio,ICCI,ICCI-S6,Docente 05,4,2,1,R-043,26,32,False
+Programación Avanzada,20335,DAIS-00302,Obligatorio,IenCI,IenCI-S3,Docente 58,4,2,1,R-019,40,45,False
+Estructuras de Datos,21950,DAIS-00407,Obligatorio,ICCI,ICCI-S4,Docente 16,4,3,1,R-012,22,22,False
+Ingeniería de Requerimientos,22827 / 22828,DAIS-09081 / DAIS-09085,Electivo,ICCI / IenCI,,Docente 18,4,3,1,R-043,32,32,False
+Matemática Avanzada,23819,FAIC-00501,Obligatorio,ICEL,ICEL-S5,Docente 57,4,3,1,R-049,0,26,False
+Programación,20385,DAIS-00200,Obligatorio,PC,PC-S3,Docente 13,4,3,2,Y1-003,45,50,False
+Programación,20387,DAIS-00200,Obligatorio,PC,PC-S3,Docente 44,4,3,1,R-019,28,45,False
+TIC en Procesos Mineros,21965 / 21966,DAIS-00707 / DAIS-09079,Obligatorio,ICCI / IenCI,IenCI-S7,Docente 09,4,3,1,R-006,41,45,False
+Circuítos Análogos,23820,FAIC-00502,Obligatorio,ICEL,ICEL-S5,Docente 51,4,4,1,R-043,20,32,False
+Electrotecnia,21599 / 21600,DAIS-00403 / DAIS-00703,Laboratorio,ICCI / IenCI,ICCI-S5 | IenCI-S4,Docente 24,4,4,2,R-032,18,42,False
+Gestión de Proyectos TI,21615 / 22129,DAIS-00704 / DAIS-09084,Obligatorio,ICCI / IenCI,ICCI-S8,Docente 10,4,4,1,R-019,32,45,False
+Internet de las Cosas,21024 / 21958,DAIS-00708 / DAIS-09074,Obligatorio,ICCI / IenCI,IenCI-S7,Docente 37,4,4,2,Y1-004,21,21,False
+Modelos y Métodos para la Evaluación y Mejora de Procesos de Software,ADD,DAIS-01679,Electivo,PMII,,Docente 05,4,4,1,Y1-005,0,20,False
+Robótica Avanzada,60284,DAIS-01901,Electivo,PDIA,,Docente 48,4,4,1,Y1-001,0,20,False
+Arquitectura de Sistemas,21962,DAIS-00822,Obligatorio,ICCI,ICCI-S8,Docente 08,4,5,1,R-012,20,22,False
+Ciberseguridad,21136 / 21971 / 22166,DAIS-09062 / DAIS-09069 / MNOR-00014,Electivo,ICCI / ICEL / IenCI,,Docente 53,4,5,1,Y1-003,50,50,False
+Electrotecnia,21601 / 21602,DAIS-00403 / DAIS-00703,Laboratorio,ICCI / IenCI,ICCI-S5 | IenCI-S4,Docente 44,4,5,2,R-033,18,22,False
+Int. al modelado 3D y fabricac,21947 / 22131,DAIS-09075 / DAIS-09088,Electivo,ICCI / IenCI,,Docente 14,4,5,2,Y2-107,14,30,False
+Introducción a Visión por Computador,23959,DAIS-00530,Electivo,ICEL,,Docente 60,4,5,1,R-019,0,45,False
+Procesamiento Analítico de Dat,21976 / 22130 / 22470,DAIS-09076 / DAIS-09089 / MNOR-00087,Electivo,ICCI / IenCI / MDS,,Docente 46,4,6,1,Y1-003,24,50,False
+Programación,22824,DAIS-00201,Obligatorio,IenCI,IenCI-S2,Docente 40,4,6,1,V2-Univ,32,32,False
+Proyecto Integrador Gestión TI,21951,DAIS-00824,Proyecto,ICCI,ICCI-S8,Docente 09,4,6,1,V3-Rob,21,21,False
+Electrotecnia,22532,DAIS-00703,Laboratorio,ICCI,ICCI-S5,Docente 27,5,1,2,R-033,18,22,False
+Programación,20387,DAIS-00200,Obligatorio,PC,PC-S3,Docente 44,5,1,2,V2-Univ,28,32,False
+Programación,21034,DAIS-00440,Cátedra,Geo,Geo-S4,Docente 07,5,3,2,R-023,31,32,False

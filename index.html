@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horarios DISC: válido primero, óptimo si se puede probar</title>
+<meta name="description" content="Comparación de FET, OR-Tools CP-SAT, MiniZinc y Gurobi para generar horarios universitarios, con datos del departamento anonimizados y horarios descargables.">
+<link rel="preload" href="fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/estilos.css">
+<script>document.documentElement.classList.add("js");try{var q=new URLSearchParams(location.search).get("tema");var t=q==="claro"?"light":q==="oscuro"?"dark":localStorage.getItem("tema");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio">horarios<b>/</b>disc</a>
+    <ul id="menu">
+      <li><a href="#concepto">Concepto</a></li>
+      <li><a href="#reglas">Reglas</a></li>
+      <li><a href="#motores">Motores</a></li>
+      <li><a href="#resultados">Resultados</a></li>
+      <li><a href="#salas">Salas</a></li>
+      <li><a href="#estabilidad">Estabilidad</a></li>
+      <li><a href="#explorador">Explorador</a></li>
+      <li><a href="#conclusiones">Cierre</a></li>
+    </ul>
+    <button class="tema" id="tema" type="button" aria-label="Cambiar entre tema claro y oscuro">Tema</button>
+  </div>
+</header>
+
+<main id="inicio">
+
+<!-- 1. HERO: split asimetrico con grilla horaria real -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Válido primero. <em>Mejor</em>, si se puede probar.</h1>
+      <p class="lead">Comparamos FET, CP-SAT, MiniZinc y Gurobi con las mismas reglas y los datos del departamento, anonimizados.</p>
+      <div class="acciones">
+        <a class="btn primario" href="#explorador">Ver horarios</a>
+        <a class="btn" href="#conclusiones">Leer conclusiones</a>
+      </div>
+      <div class="kpis" id="kpis" aria-label="Tamaño del problema"></div>
+    </div>
+    <div class="hero-vis">
+      <div class="panel pad">
+        <div class="vista-cab" style="margin-bottom:12px">
+          <strong id="hero-titulo">Semestre ICCI-S6</strong>
+          <span class="chip ok" id="hero-chip">0 choques</span>
+        </div>
+        <div id="hero-grid" class="grid-h mini" role="img" aria-label="Horario semanal de un semestre"></div>
+        <p class="caption" id="hero-pie"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. CONCEPTO: valido vs optimo -->
+<section id="concepto">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Válido y óptimo no son lo mismo</h2>
+      <p class="lead">El encargo es encontrar un horario que se pueda usar. Saber si es el mejor posible es una pregunta distinta, y solo algunos motores pueden responderla.</p>
+    </div>
+    <div class="concepto">
+      <div class="panel pad rv">
+        <svg class="conjuntos" viewBox="0 0 640 400" role="img" aria-label="Diagrama de conjuntos: los horarios óptimos están dentro de los válidos, que están dentro de todos los posibles">
+          <rect x="6" y="6" width="628" height="388" rx="18" fill="var(--surface-2)" stroke="var(--line)"/>
+          <text x="28" y="38" class="t-grande">Todos los horarios posibles</text>
+          <text x="28" y="58">incluye los que tienen choques de docente, sala o estudiantes</text>
+          <ellipse cx="320" cy="238" rx="280" ry="140" fill="var(--bad-soft)" stroke="var(--bad)" stroke-opacity=".5"/>
+          <ellipse cx="270" cy="250" rx="170" ry="96" fill="var(--accent-soft)" stroke="var(--accent)" stroke-opacity=".7"/>
+          <circle cx="352" cy="262" r="26" fill="var(--accent)"/>
+          <text x="168" y="236" class="t-grande">Válidos</text>
+          <text x="168" y="256">cumplen todas</text>
+          <text x="168" y="272">las reglas duras</text>
+          <line x1="380" y1="262" x2="470" y2="296" stroke="var(--text-3)" stroke-width="1.2"/>
+          <text x="476" y="296" class="t-grande">Óptimo</text>
+          <text x="476" y="314">menor costo blando</text>
+          <text x="476" y="330">y con prueba</text>
+        </svg>
+        <div class="leyenda"><span>Un motor heurístico llega a la zona verde. Uno exacto, además, puede demostrar que está en el punto sólido.</span></div>
+      </div>
+      <div class="rv">
+        <div class="def-lista">
+          <div><strong>Válido</strong><span class="muted">Cumple todas las reglas duras: nadie está en dos lugares a la vez, ninguna sala se pisa, la capacidad alcanza. Hay millones, basta encontrar uno.</span></div>
+          <div class="ok"><strong>Óptimo</strong><span class="muted">Entre los válidos, el de menor costo blando (huecos, ventanas, bloques tardíos). Se prueba cuando la cota inferior iguala al costo encontrado.</span></div>
+        </div>
+        <div class="tabla-wrap" style="margin-top:28px"><table id="tabla-juguete"></table></div>
+        <p class="muted" style="margin-top:12px;font-size:14px">Problema pequeño de 15 clases y 2 salas, resuelto por cada motor con la misma instancia y un verificador independiente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. REGLAS: pestañas -->
+<section id="reglas" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="eyebrow">Qué se evaluó</span>
+      <h2>Reglas duras y blandas</h2>
+      <p class="lead">Una regla dura invalida el horario si se rompe. Una blanda solo suma costo. Cada una indica de dónde sale, para no confundir evidencia con supuesto.</p>
+    </div>
+    <div class="tabs" role="tablist" id="tabs-reglas"></div>
+    <div class="reglas" id="lista-reglas"></div>
+    <p class="muted" style="margin-top:22px;max-width:70ch;font-size:14.5px"><span class="chip ok">E</span> respaldada por la entrevista con el encargado docente. <span class="chip aviso">B</span> supuesto basado en cómo funciona la toma de ramos en Banner. <span class="chip">P</span> hipótesis del prototipo, aún sin validar.</p>
+  </div>
+</section>
+
+<!-- 4. MOTORES: carrusel scroll-snap -->
+<section id="motores">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Motores revisados</h2>
+      <p class="lead">Se investigaron diez opciones y se ejecutaron seis: FET, CP-SAT, Gecode, Chuffed y HiGHS (a través de MiniZinc) y Gurobi. Las demás quedan documentadas con su licencia y su costo de adopción.</p>
+    </div>
+    <div class="carrusel" id="carrusel" tabindex="0" aria-label="Motores de optimización"></div>
+  </div>
+</section>
+
+<!-- 5. RESULTADOS: grafico grande + tabla -->
+<section id="resultados" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Resultados con los datos reales</h2>
+      <p class="lead" id="res-lead"></p>
+    </div>
+    <div class="tabs" role="tablist" id="tabs-res"></div>
+    <div class="panel pad rv">
+      <h3 id="res-titulo" style="margin-bottom:6px"></h3>
+      <p class="muted" id="res-sub" style="margin-bottom:22px;font-size:14.5px"></p>
+      <svg class="chart" id="chart-costos" role="img" aria-label="Costo blando por horario"></svg>
+      <div class="leyenda" id="ley-costos"></div>
+    </div>
+    <div class="tabla-wrap rv" style="margin-top:20px"><table id="tabla-res"></table></div>
+  </div>
+</section>
+
+<!-- 6. SALAS: bento de 3 celdas -->
+<section id="salas">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Cursos compartidos y elección de sala</h2>
+      <p class="lead">Una asignatura que se dicta en varios programas suma sus cupos, y esa suma decide qué sala sirve. Con las salas del cliente casi no había decisión; liberándolas, la capacidad pasa a mandar.</p>
+    </div>
+    <div class="bento">
+      <div class="panel b1 rv">
+        <h3 style="margin-bottom:6px">Asientos libres por escenario</h3>
+        <p class="muted" style="margin-bottom:18px;font-size:14.5px">Capacidad de la sala menos cupo de la clase, sumado sobre todas las sesiones. Menos es mejor.</p>
+        <svg class="chart" id="chart-desp" role="img" aria-label="Desperdicio de capacidad por escenario"></svg>
+      </div>
+      <div class="panel b2 rv">
+        <div class="big" id="big-desp"></div>
+        <p style="margin-top:10px">menos asientos desperdiciados al pedirlo como regla, a cambio de pocos puntos de costo en huecos y ventanas.</p>
+        <p class="muted" style="margin-top:14px;font-size:14px">Sin esa regla el motor elige salas casi al azar: nada lo empuja a ajustarlas.</p>
+      </div>
+      <div class="panel b3 rv">
+        <div>
+          <h3 style="margin-bottom:10px">Lo que hay detrás de la sala</h3>
+          <p class="muted" style="font-size:14.5px" id="salas-texto"></p>
+        </div>
+        <div class="tabla-wrap"><table id="tabla-compartidas"></table></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. ESTABILIDAD: slider + pareto -->
+<section id="estabilidad" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Cuánto cambiar del horario original</h2>
+      <p class="lead">Mover pocas sesiones se parece más a lo que ya conocen los docentes; moverlas libremente permite un horario más compacto. El peso de ese compromiso es una decisión, no un dato.</p>
+    </div>
+    <div class="pareto">
+      <div class="panel pad rv">
+        <svg class="chart" id="chart-pareto" role="img" aria-label="Costo blando contra parecido con el horario original"></svg>
+      </div>
+      <div class="panel pad rv">
+        <div class="control">
+          <label for="w5">Peso por sesión movida: <b class="mono" id="w5-val"></b></label>
+          <input type="range" id="w5" min="0" max="4" step="1" value="1">
+        </div>
+        <div class="lectura" style="margin-top:22px" id="lectura-w5"></div>
+        <div id="alt-links" class="descargas" style="grid-template-columns:1fr"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. EXPLORADOR -->
+<section id="explorador">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Explorar los horarios y descargarlos</h2>
+      <p class="lead">Cada horario se puede ver por semestre, por sala o por docente. Los docentes aparecen con un código; salas, asignaturas, cupos y bloques son los reales.</p>
+    </div>
+    <div class="explorador">
+      <div class="panel filtros rv">
+        <div class="campo"><label for="f-horario">Horario</label><select id="f-horario"></select></div>
+        <div class="campo"><label for="f-vista">Ver por</label>
+          <select id="f-vista"><option value="semestre">Semestre</option><option value="sala">Sala</option><option value="docente">Docente</option></select></div>
+        <div class="campo"><label for="f-entidad" id="l-entidad">Semestre</label><select id="f-entidad"></select></div>
+        <div id="f-resumen" class="muted" style="font-size:14px"></div>
+      </div>
+      <div class="panel vista rv">
+        <div class="vista-cab"><strong id="v-titulo"></strong><span id="v-chips" style="display:flex;gap:8px;flex-wrap:wrap"></span></div>
+        <div id="v-grid" class="grid-h"></div>
+        <div class="descargas" id="v-descargas"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. CONCLUSIONES -->
+<section id="conclusiones" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="sec-head rv"><h2>Conclusiones</h2></div>
+    <div class="cierre">
+      <div class="si rv">
+        <h3>Lo que sí podemos afirmar</h3>
+        <ul id="ok-lista"></ul>
+      </div>
+      <div class="no rv">
+        <h3>Lo que todavía no</h3>
+        <ul id="no-lista"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Proyecto capstone UCN. Datos anonimizados: los docentes se reemplazan por códigos y no se publica ningún RUT.</span>
+    <span>Salas, asignaturas, NRC, cupos y bloques sin modificar.</span>
+  </div>
+</footer>
+<div class="tip" id="tip" role="tooltip"></div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

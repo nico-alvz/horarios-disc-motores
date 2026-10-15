@@ -1,0 +1,152 @@
+[
+ {
+  "id": "H1",
+  "tipo": "dura",
+  "proc": "P",
+  "texto": "Cada actividad se ubica exactamente una vez, con su duración."
+ },
+ {
+  "id": "H2",
+  "tipo": "dura",
+  "proc": "P",
+  "texto": "Un docente no dicta dos actividades a la vez."
+ },
+ {
+  "id": "H3",
+  "tipo": "dura",
+  "proc": "E",
+  "texto": "Una sala no aloja dos actividades a la vez. Las salas requieren disponibilidad y autorización."
+ },
+ {
+  "id": "H4",
+  "tipo": "dura",
+  "proc": "E",
+  "texto": "Un semestre no tiene dos actividades a la vez. Es la garantía curricular que en Banner evita el tope de horario."
+ },
+ {
+  "id": "H5",
+  "tipo": "dura",
+  "proc": "E",
+  "texto": "La capacidad de la sala alcanza para el cupo. Una sala histórica del cliente no es obligatoria."
+ },
+ {
+  "id": "H6",
+  "tipo": "dura",
+  "proc": "E",
+  "texto": "Cursos compartidos entre programas: el cupo es la suma de las secciones fusionadas y ocupa a la vez cada programa y semestre."
+ },
+ {
+  "id": "H7",
+  "tipo": "dura",
+  "proc": "B",
+  "texto": "Las clases de laboratorio o taller van solo a salas de laboratorio (inferidas de dónde el cliente ya las dicta)."
+ },
+ {
+  "id": "H8",
+  "tipo": "dura",
+  "proc": "P",
+  "texto": "La sesión cabe en el día y no cruza el almuerzo entre los bloques C y D."
+ },
+ {
+  "id": "H9",
+  "tipo": "dura",
+  "proc": "P",
+  "texto": "Las sesiones de una misma clase caen en días distintos."
+ },
+ {
+  "id": "H10",
+  "tipo": "dura",
+  "proc": "P",
+  "texto": "Solo de lunes a viernes. El sábado queda fijo tal como lo tiene el cliente."
+ },
+ {
+  "id": "H11",
+  "tipo": "dura",
+  "proc": "E",
+  "texto": "Los docentes por hora solo dictan dentro de su disponibilidad declarada por día y bloque. En esta demostración la disponibilidad es inventada."
+ },
+ {
+  "id": "H12",
+  "tipo": "dura",
+  "proc": "P",
+  "texto": "Restricciones duras que el usuario fija a mano sobre un docente o una clase."
+ },
+ {
+  "id": "H13",
+  "tipo": "dura",
+  "proc": "P",
+  "texto": "Topes: a lo más 2 bloques libres por semestre y 2 ventanas por docente. Candidatos a pasar a reglas blandas."
+ },
+ {
+  "id": "H14",
+  "tipo": "dura",
+  "proc": "E",
+  "texto": "Los horarios de ciencias básicas son una entrada fija que condiciona al resto de la oferta."
+ },
+ {
+  "id": "H15",
+  "tipo": "dura",
+  "proc": "E",
+  "texto": "Una sala externa se usa solo si fue solicitada y aprobada; si no, solo el inventario propio."
+ },
+ {
+  "id": "S1",
+  "tipo": "blanda",
+  "proc": "P",
+  "texto": "Menos bloques libres entre clases de un mismo semestre. Peso de trabajo 3."
+ },
+ {
+  "id": "S2",
+  "tipo": "blanda",
+  "proc": "P",
+  "texto": "Menos ventanas en la jornada de cada docente. Peso de trabajo 2."
+ },
+ {
+  "id": "S3",
+  "tipo": "blanda",
+  "proc": "P",
+  "texto": "Menos sesiones que comienzan en los bloques F o G. Peso de trabajo 1."
+ },
+ {
+  "id": "S4",
+  "tipo": "blanda",
+  "proc": "E",
+  "texto": "Preferencias de los docentes de planta. Peso 1 por sesión que no las cumple."
+ },
+ {
+  "id": "S5",
+  "tipo": "blanda",
+  "proc": "E",
+  "texto": "Estabilidad: mover pocas sesiones respecto de un horario aprobado. El peso por sesión movida es una decisión de negocio."
+ },
+ {
+  "id": "S6",
+  "tipo": "blanda",
+  "proc": "P",
+  "texto": "Pocos días de trabajo por docente y carga diaria equilibrada."
+ },
+ {
+  "id": "S7",
+  "tipo": "blanda",
+  "proc": "B",
+  "texto": "Sesiones de una misma asignatura espaciadas en la semana."
+ },
+ {
+  "id": "S8",
+  "tipo": "blanda",
+  "proc": "B",
+  "texto": "Evitar que un estudiante tenga un día con más de 6 bloques."
+ },
+ {
+  "id": "S9",
+  "tipo": "blanda",
+  "proc": "B",
+  "texto": "Con paralelos alternativos, que un estudiante pueda armar una ruta sin tope de horario."
+ },
+ {
+  "id": "S10",
+  "tipo": "blanda",
+  "proc": "B",
+  "texto": "Menos desperdicio de capacidad: reservar las salas grandes para los cursos grandes. Peso 1 por asiento libre."
+ }
+]
