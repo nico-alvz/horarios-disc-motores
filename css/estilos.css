@@ -154,6 +154,21 @@ tr.mejor td { background: var(--accent-soft); }
 .motor dd { margin: 2px 0 0; color: var(--text-2); }
 .motor.destacado { border-color: var(--accent); }
 
+/* iconos y enlaces de motores */
+.motor header { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; gap: 12px; align-items: center; }
+.logo { width: 40px; height: 40px; border-radius: var(--r-sm); background: var(--surface-2); border: 1px solid var(--line-soft); display: grid; place-items: center; flex: none; }
+.logo[style*="--src"] { background: var(--text); -webkit-mask: var(--src) center / 22px no-repeat; mask: var(--src) center / 22px no-repeat; border: 0; }
+.logo.mono-marca { font: 700 15px var(--mono); color: var(--accent); letter-spacing: -.04em; }
+.enlace-motor { align-self: end; font: 550 14px var(--sans); color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; width: fit-content; }
+.enlace-motor::after { content: " \2197"; }
+.enlace-motor:hover { border-color: var(--accent); }
+.car-ctrl { display: flex; gap: 8px; margin-bottom: 14px; }
+.car-ctrl .btn { height: 38px; }
+.car-ctrl .btn:disabled { opacity: .4; cursor: default; }
+.carrusel { padding-right: 24px; scroll-padding-inline: 4px; -webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 56px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 56px), transparent); }
+.carrusel.fin { -webkit-mask-image: none; mask-image: none; }
+.motor { grid-template-rows: auto auto 1fr auto; }
+
 /* graficos */
 .chart { width: 100%; }
 .chart text { font: 500 11.5px var(--mono); fill: var(--text-2); }
@@ -199,6 +214,11 @@ select, input[type="search"] { width: 100%; height: 42px; border-radius: var(--r
 .descarga:hover { border-color: var(--accent); transform: translateY(-1px); }
 .descarga small { display: block; color: var(--text-3); font: 500 11.5px var(--mono); }
 
+.cuaderno { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: clamp(24px, 4vw, 56px); align-items: center; }
+.cuaderno .pasos { margin: 22px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+.cuaderno .pasos li { padding-left: 16px; border-left: 2px solid var(--accent); color: var(--text-2); }
+.cuaderno .pasos b { color: var(--text); }
+@media (max-width: 960px) { .cuaderno { grid-template-columns: minmax(0, 1fr); } }
 /* cierre */
 .cierre { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(20px, 4vw, 56px); }
 .cierre ul { margin: 14px 0 0; padding: 0; list-style: none; display: grid; gap: 14px; }

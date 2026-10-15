@@ -1,0 +1,8 @@
+ortools
+highspy
+gurobipy
+minizinc
+openpyxl
+pandas
+matplotlib
+ipywidgets

@@ -132,6 +132,14 @@ function pintarGrid(cont, sesiones, { mini = false, etiqueta = "asignatura" } = 
 })();
 
 // ---------- motores (carrusel)
+const ENLACE = {
+  "FET": "https://www.lalescu.ro/liviu/fet/", "OR-Tools CP-SAT": "https://developers.google.com/optimization/cp/cp_solver",
+  "MiniZinc + Gecode / Chuffed": "https://www.minizinc.org/", "MiniZinc + HiGHS": "https://highs.dev/", "Gurobi": "https://www.gurobi.com/",
+  "HiGHS directo": "https://highs.dev/", "SCIP": "https://www.scipopt.org/", "Timefold Solver": "https://timefold.ai/", "UniTime": "https://www.unitime.org/",
+};
+const MARCA = { "OR-Tools CP-SAT": "img/google.svg", "Gurobi": "img/gurobi.svg" };   // logos reales de Simple Icons; el resto, monograma
+const MONO = { "FET": "F", "MiniZinc + Gecode / Chuffed": "Mz", "MiniZinc + HiGHS": "Mz", "HiGHS directo": "Hi", "SCIP": "S", "Timefold Solver": "T", "UniTime": "U" };
+const marca = n => MARCA[n] ? `<span class="logo" style="--src:url(${new URL(MARCA[n], document.baseURI).href})" role="img" aria-label="Logo de ${esc(n)}"></span>` : `<span class="logo mono-marca" aria-hidden="true">${MONO[n] || n[0]}</span>`;
 const MOTORES = [
   { n: "FET", t: "Aplicación especializada", ej: true, lic: "AGPL-3.0, sin límite de tamaño", mod: "Actividades, docentes, grupos y salas en un archivo XML con pesos.", cert: "Heurístico: entrega un horario válido, sin cota de qué tan lejos está del mejor.", aqui: "Ejecutado. Es la referencia del prototipo." },
   { n: "OR-Tools CP-SAT", t: "Solver de restricciones", ej: true, dest: true, lic: "Apache-2.0, sin límite de tamaño", mod: "Variables booleanas de asignación, un costo entero explícito y restricciones de no solape.", cert: "Encuentra válidos, mejora y puede probar el óptimo con una cota.", aqui: "Ejecutado sobre los datos reales. Recomendado como primer motor alternativo." },
@@ -145,7 +153,7 @@ const MOTORES = [
 ];
 $("#carrusel").innerHTML = MOTORES.map(m => `
   <article class="panel motor${m.dest ? " destacado" : ""}">
-    <header><h3>${esc(m.n)}</h3><span class="chip ${m.ej ? "ok" : ""}">${m.ej ? "ejecutado" : "documentado"}</span></header>
+    <header>${marca(m.n)}<h3>${esc(m.n)}</h3><span class="chip ${m.ej ? "ok" : ""}">${m.ej ? "ejecutado" : "documentado"}</span></header>
     <span class="tipo">${esc(m.t)}</span>
     <dl>
       <div><dt>Licencia</dt><dd>${esc(m.lic)}</dd></div>
@@ -153,7 +161,16 @@ $("#carrusel").innerHTML = MOTORES.map(m => `
       <div><dt>Qué puede certificar</dt><dd>${esc(m.cert)}</dd></div>
       <div><dt>En este proyecto</dt><dd>${esc(m.aqui)}</dd></div>
     </dl>
+    <a class="enlace-motor" href="${ENLACE[m.n]}" target="_blank" rel="noopener">Sitio oficial de ${esc(m.n.split(" + ")[0].split(" / ")[0])}</a>
   </article>`).join("");
+
+(() => {
+  const c = $("#carrusel"), paso = () => Math.min(c.clientWidth * .8, 700);
+  $("#car-prev").addEventListener("click", () => c.scrollBy({ left: -paso(), behavior: "smooth" }));
+  $("#car-next").addEventListener("click", () => c.scrollBy({ left: paso(), behavior: "smooth" }));
+  const act = () => { const fin = c.scrollLeft + c.clientWidth >= c.scrollWidth - 8; $("#car-prev").disabled = c.scrollLeft < 8; $("#car-next").disabled = fin; c.classList.toggle("fin", fin); };
+  c.addEventListener("scroll", act, { passive: true }); act();
+})();
 
 // ---------- gráfico de barras horizontal reutilizable
 function barras(svg, filas, { max, formato = v => fmt(v), ancho = 920, etiquetaAncho = 190 } = {}) {
@@ -283,6 +300,23 @@ const leyendaMotor = () => `<span><i style="background:var(--fet)"></i>FET</span
   };
   fh.addEventListener("change", cargarH); fv.addEventListener("change", () => { entidades(); vista(); }); fe.addEventListener("change", vista);
   await cargarH();
+})();
+
+// ---------- vistas previas del cuaderno
+(() => {
+  const V = [
+    ["costo_motores", "Costo por motor", "Costo comparable de cada horario válido: CP-SAT y HiGHS llegan a 0, FET queda en 131."],
+    ["horario_semestre", "Un semestre", "El horario de un semestre, con sala y almuerzo marcado, generado por el motor de menor costo."],
+    ["ocupacion_salas", "Ocupación de salas", "Qué sala se usa en cada día y bloque."],
+    ["estabilidad", "Estabilidad", "Cuánto cambia el horario original según el peso por sesión movida."],
+  ];
+  let a = 0;
+  const pintar = () => {
+    $("#tabs-prev").innerHTML = V.map((v, i) => `<button class="tab" role="tab" aria-selected="${i === a}" data-i="${i}">${v[1]}</button>`).join("");
+    $("#tabs-prev").querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => { a = +b.dataset.i; pintar(); }));
+    $("#prev-img").src = `img/${V[a][0]}.png`; $("#prev-img").alt = V[a][2]; $("#prev-pie").textContent = V[a][2];
+  };
+  pintar();
 })();
 
 // ---------- conclusiones (a partir de los datos medidos)

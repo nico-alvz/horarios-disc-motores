@@ -20,3 +20,11 @@ python -m http.server 8000
 ## Publicación
 
 GitHub Pages sirve la rama principal desde la raíz del repositorio.
+
+## Cuaderno
+
+`cuaderno/comparar_motores.ipynb` funciona en Google Colab y en local: carga la planilla, declara las reglas y compara los motores (FET, OR-Tools CP-SAT, HiGHS, SCIP, MiniZinc y Gurobi) mediante un patrón adaptador. El paquete `motores_horarios/` define el modelo común y los adaptadores; `horarios_disc/` contiene la lectura de la planilla, FET y el verificador.
+
+[Abrir en Colab](https://colab.research.google.com/github/nico-alvz/horarios-disc-motores/blob/main/cuaderno/comparar_motores.ipynb)
+
+La planilla del cliente no está en este repositorio: se sube al ejecutar el cuaderno.

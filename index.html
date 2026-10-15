@@ -22,6 +22,7 @@
       <li><a href="#salas">Salas</a></li>
       <li><a href="#estabilidad">Estabilidad</a></li>
       <li><a href="#explorador">Explorador</a></li>
+      <li><a href="#cuaderno">Cuaderno</a></li>
       <li><a href="#conclusiones">Cierre</a></li>
     </ul>
     <button class="tema" id="tema" type="button" aria-label="Cambiar entre tema claro y oscuro">Tema</button>
@@ -114,6 +115,7 @@
       <h2>Motores revisados</h2>
       <p class="lead">Se investigaron diez opciones y se ejecutaron seis: FET, CP-SAT, Gecode, Chuffed y HiGHS (a través de MiniZinc) y Gurobi. Las demás quedan documentadas con su licencia y su costo de adopción.</p>
     </div>
+    <div class="car-ctrl"><button class="btn" id="car-prev" type="button">Anterior</button><button class="btn" id="car-next" type="button">Siguiente</button></div>
     <div class="carrusel" id="carrusel" tabindex="0" aria-label="Motores de optimización"></div>
   </div>
 </section>
@@ -208,6 +210,30 @@
         <div id="v-grid" class="grid-h"></div>
         <div class="descargas" id="v-descargas"></div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8b. CUADERNO -->
+<section id="cuaderno">
+  <div class="wrap cuaderno">
+    <div class="rv">
+      <h2>Reproducirlo con tus datos</h2>
+      <p class="lead" style="margin-top:16px">Un cuaderno de Google Colab carga tu planilla, te deja declarar las reglas y compara los motores con la misma formulación. Cambiar de motor es cambiar una clave.</p>
+      <ul class="pasos">
+        <li><b>Cargar</b> la planilla y revisar el informe de datos.</li>
+        <li><b>Definir</b> reglas duras y pesos blandos en una sola celda.</li>
+        <li><b>Elegir</b> motores y ver tabla, gráficos y horarios.</li>
+        <li><b>Descargar</b> el Excel y el CSV de cada motor.</li>
+      </ul>
+      <div class="acciones" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:26px">
+        <a class="btn primario" href="https://colab.research.google.com/github/nico-alvz/horarios-disc-motores/blob/main/cuaderno/comparar_motores.ipynb" target="_blank" rel="noopener">Abrir en Colab</a>
+        <a class="btn" href="https://github.com/nico-alvz/horarios-disc-motores" target="_blank" rel="noopener">Ver el código</a>
+      </div>
+    </div>
+    <div class="panel pad rv">
+      <div class="tabs" role="tablist" id="tabs-prev"></div>
+      <figure style="margin:0"><img id="prev-img" alt="" width="1200" height="520" loading="lazy" style="width:100%;height:auto;border-radius:var(--r-sm);border:1px solid var(--line-soft)"><figcaption class="muted" id="prev-pie" style="margin-top:12px;font-size:14px"></figcaption></figure>
     </div>
   </div>
 </section>
