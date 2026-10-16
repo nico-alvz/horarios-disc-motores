@@ -16,6 +16,7 @@
     <a class="brand" href="#inicio">horarios<b>/</b>disc</a>
     <ul id="menu">
       <li><a href="#concepto">Concepto</a></li>
+      <li><a href="#costo">Costo</a></li>
       <li><a href="#reglas">Reglas</a></li>
       <li><a href="#motores">Motores</a></li>
       <li><a href="#resultados">Resultados</a></li>
@@ -90,6 +91,39 @@
         <div class="tabla-wrap" style="margin-top:28px"><table id="tabla-juguete"></table></div>
         <p class="muted" style="margin-top:12px;font-size:14px">Problema pequeño de 15 clases y 2 salas, resuelto por cada motor con la misma instancia y un verificador independiente.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2b. COSTO Y GLOSARIO -->
+<section id="costo">
+  <div class="wrap">
+    <div class="costo-intro">
+      <div class="rv">
+        <h2>Qué significa el costo</h2>
+        <p class="lead" style="margin-top:16px">Un horario es <b>válido</b> cuando no tiene choques. El <b>costo</b> mide otra cosa: cuánta incomodidad queda dentro de los horarios válidos. Cada situación incómoda suma puntos, y menos puntos es mejor.</p>
+        <ul class="pasos">
+          <li><b>Hueco:</b> un bloque libre entre dos clases de un mismo semestre en un día. Cuesta 3 puntos por bloque.</li>
+          <li><b>Ventana:</b> un bloque libre entre dos clases de un mismo docente en un día. Cuesta 2 puntos por bloque.</li>
+          <li><b>Bloque F o G:</b> una sesión que empieza desde las 18:00. Cuesta 1 punto.</li>
+        </ul>
+        <p class="muted" style="margin-top:18px;max-width:62ch">Ejemplo: un semestre con clase a las 08:10 y otra a las 11:40, sin nada a las 09:55, tiene 1 hueco y suma 3 puntos. Costo 0 significa que no ocurre ninguna de las tres cosas. Los pesos 3, 2 y 1 son supuestos de trabajo, no valores validados con el cliente.</p>
+      </div>
+      <div class="panel pad rv">
+        <div class="campo"><label for="d-horario">Desglose de un horario real</label><select id="d-horario"></select></div>
+        <div class="desglose" id="desglose" aria-live="polite"></div>
+        <p class="muted" style="font-size:13.5px;margin-top:14px">El costo no incluye los choques: un horario con choques no es válido, sin importar sus puntos. Tampoco incluye lo que el motor haya optimizado además (estabilidad, asientos libres); eso se llama objetivo.</p>
+      </div>
+    </div>
+    <div id="glosario" class="glosario rv">
+      <div class="glos-cab">
+        <h3>Glosario</h3>
+        <div class="glos-ctrl">
+          <input type="search" id="g-buscar" placeholder="Buscar un término" aria-label="Buscar en el glosario">
+          <div class="tabs" id="g-cats" role="tablist" style="margin:0"></div>
+        </div>
+      </div>
+      <dl class="glos-lista" id="g-lista"></dl>
     </div>
   </div>
 </section>

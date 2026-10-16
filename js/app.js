@@ -117,6 +117,57 @@ function pintarGrid(cont, sesiones, { mini = false, etiqueta = "asignatura" } = 
       return `<tr class="${mejor ? "mejor" : ""}"><td>${esc(j.motor)}</td><td class="num">${j.costo == null ? "sin resultado" : j.violaciones}</td><td class="num">${j.costo == null ? "-" : fmt(j.costo)}</td><td class="num">${j.cota == null ? "-" : fmt(j.cota)}</td><td class="num">${j.costo == null ? "&gt;" + fmt(j.segundos, 0) : fmt(j.segundos, 2)}</td></tr>`; }).join("") + "</tbody>";
 })();
 
+// ---------- costo: desglose y glosario
+(() => {
+  const sel = $("#d-horario");
+  const cand = R.horarios.filter(h => h.huecos != null);
+  sel.innerHTML = cand.map(h => `<option value="${h.id}">${esc(h.nombre)}</option>`).join("");
+  sel.value = H.fet_base_V03 ? "fet_base_V03" : cand[0].id;
+  const pintar = () => {
+    const h = H[sel.value], f = [["Huecos", "bloques libres de estudiantes", h.huecos, 3], ["Ventanas", "bloques libres de docentes", h.ventanas, 2], ["Bloques F o G", "sesiones desde las 18:00", h.fg, 1]];
+    const tope = Math.max(...cand.flatMap(x => [x.huecos * 3, x.ventanas * 2, x.fg]), 1);
+    $("#desglose").innerHTML = f.map(([n, sub, v, w]) => `<div class="d-fila"><span class="nom">${n}<small>${v} x ${w}</small></span><span class="d-pista"><i style="width:${Math.max(v * w / tope * 100, v ? 2 : 0)}%"></i></span><b>${v * w}</b></div>`).join("") +
+      `<div class="d-total"><span>${h.valido ? "Horario válido" : h.violaciones + " choques: no es válido"}, costo total</span><b>${fmt(h.huecos * 3 + h.ventanas * 2 + h.fg)}</b></div>`;
+  };
+  sel.addEventListener("change", pintar); pintar();
+
+  const G = [
+    ["Lo básico", "Bloque", "Tramo de clase de 90 minutos. Hay siete por día: A 08:10, B 09:55, C 11:40, D 14:30, E 16:15, F 18:00 y G 19:45. El almuerzo cae entre C y D."],
+    ["Lo básico", "Sesión", "Una clase semanal ubicada en un día y un bloque. Una asignatura con dos clases por semana tiene dos sesiones."],
+    ["Lo básico", "Semestre", "Grupo de estudiantes que cursan juntos, por ejemplo ICCI-S6. Dos clases de un mismo semestre no pueden coincidir."],
+    ["Lo básico", "Curso compartido", "Asignatura que se dicta a la vez en varios programas. Su cupo es la suma de los cupos de todas sus secciones, y eso decide qué sala sirve."],
+    ["Lo básico", "Cupo y capacidad", "El cupo es cuántos estudiantes tiene la clase. La capacidad es cuántos caben en la sala. La capacidad debe alcanzar para el cupo."],
+    ["Validez", "Regla dura", "Condición que no se puede romper. Si se rompe, el horario no es válido."],
+    ["Validez", "Regla blanda", "Preferencia que se puede incumplir a cambio de puntos de costo. El motor intenta cumplir la mayor cantidad posible."],
+    ["Validez", "Choque", "Algo que no puede ocurrir a la vez: un docente en dos salas, una sala con dos clases, o estudiantes con dos clases en el mismo bloque."],
+    ["Validez", "Horario válido o factible", "Horario sin choques que cumple todas las reglas duras. Es lo que pide el encargo. Factible es el término técnico que usan los motores."],
+    ["Costo", "Costo", "Puntos de incomodidad de un horario válido: 3 por cada hueco, 2 por cada ventana y 1 por cada sesión en F o G. Menos es mejor. Es la vara común con la que se comparan todos los motores."],
+    ["Costo", "Hueco", "Bloque libre entre dos clases de un mismo semestre en un mismo día. Obliga a esperar sin clase."],
+    ["Costo", "Ventana", "Bloque libre entre dos clases de un mismo docente en un mismo día."],
+    ["Costo", "Peso", "Cuántos puntos vale cada incomodidad. Los pesos 3, 2 y 1 son supuestos de trabajo: ninguna fuente del cliente los respalda todavía."],
+    ["Costo", "Objetivo", "Lo que el motor realmente minimiza. Puede incluir más que el costo: estabilidad, asientos libres o preferencias de docentes. Por eso objetivo y costo pueden ser distintos."],
+    ["Costo", "Estabilidad", "Qué tanto se parece el horario nuevo al original. Se mide en sesiones movidas y en porcentaje de sesiones iguales. El peso por sesión movida se llama w5."],
+    ["Costo", "Asientos libres", "Capacidad de la sala menos cupo de la clase, sumado sobre todas las sesiones. Mide cuánto se desperdician las salas grandes."],
+    ["Motores", "Heurístico", "Motor que busca un buen horario sin garantías. FET lo es: entrega uno válido rápido, pero no dice qué tan lejos está del mejor."],
+    ["Motores", "Exacto", "Motor que puede demostrar que no existe nada mejor. CP-SAT, HiGHS y Gurobi lo son, si terminan dentro del tiempo."],
+    ["Motores", "Óptimo probado", "El mejor horario posible bajo las reglas y los pesos usados, con prueba: la cota inferior es igual al costo encontrado."],
+    ["Motores", "Cota y brecha", "La cota es el mejor valor que podría existir según el motor. La brecha es la distancia entre el horario encontrado y la cota. Brecha cero significa óptimo probado."],
+    ["Motores", "Sin solución en el tiempo", "El motor no encontró nada antes del límite. No significa que el problema sea imposible, solo que no alcanzó."],
+    ["Datos", "Datos inventados", "Información que no viene del cliente y se usa solo para la demostración: la disponibilidad de docentes por hora y la lista de salas de laboratorio."],
+    ["Datos", "Anonimización", "Los docentes aparecen como Docente 01, Docente 02 y así. No se publica ningún RUT. Salas, asignaturas, cupos y bloques son los reales."],
+  ];
+  const cats = ["Todo", ...new Set(G.map(g => g[0]))]; let cat = "Todo", q = "";
+  const norm = t => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  const lista = () => {
+    $("#g-cats").innerHTML = cats.map(c => `<button class="tab" role="tab" aria-selected="${c === cat}" data-c="${c}" style="height:34px;padding:0 12px">${c}</button>`).join("");
+    $("#g-cats").querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => { cat = b.dataset.c; lista(); }));
+    const vis = G.filter(([c, t, d]) => (cat === "Todo" || c === cat) && (!q || norm(t + " " + d).includes(q)));
+    $("#g-lista").innerHTML = vis.length ? vis.map(([c, t, d]) => `<div class="glos-item"><dt>${esc(t)} <span class="chip">${esc(c)}</span></dt><dd>${esc(d)}</dd></div>`).join("") : `<div class="vacio" style="grid-column:1/-1">Ningún término coincide con la búsqueda.</div>`;
+  };
+  $("#g-buscar").addEventListener("input", e => { q = norm(e.target.value.trim()); lista(); });
+  lista();
+})();
+
 // ---------- reglas con pestañas
 (() => {
   const tabs = $("#tabs-reglas"), lista = $("#lista-reglas");
